@@ -1,6 +1,7 @@
 {
     "conventionalCommits.scopes": [
         "New folder",
-        "New component"
+        "New component",
+        "New import"
     ]
 }

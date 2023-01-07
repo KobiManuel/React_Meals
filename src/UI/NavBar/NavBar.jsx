@@ -3,7 +3,7 @@ import { AiOutlineShoppingCart } from 'react-icons/ai'
 
 const NavBar = () => {
   return (
-    <div className=' bg-white body-font font-poppins'>
+    <div className=' shadow-xl bg-white body-font font-poppins'>
        <div className=' max-w-[1100px] flex bg-white items-center justify-between gap-9 h-24 mx-auto'>
        <div className="px-2 w-fit flex flex-row">
            <h3 className=' text-2xl font-semibold text-[var(--primary)]'>React <span className='text-[var(--secondary)]'>Meals</span></h3>

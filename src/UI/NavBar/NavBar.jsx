@@ -18,7 +18,7 @@ const NavBar = () => {
             <li className=' text-[#868e96] text-[15px]'><a>Contact</a></li>
           </ul>
           <div className='w-fit'>
-            <button><AiOutlineShoppingCart /> </button>
+            <button className=' rounded-full bg-[(--primary)]'><AiOutlineShoppingCart /> Your Cart<span>0</span></button>
           </div>
        </div>
     </div>

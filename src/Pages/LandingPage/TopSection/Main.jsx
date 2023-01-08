@@ -13,12 +13,13 @@ const TopSection = () => {
         maxWidth: "100%",
         height: "fit-content",
     }}>
-      <header className=' max-w-[1100px] mx-auto body-font font-poppins'>
-        <h3>A chef in every tasty meal box</h3>
-        <p>Get pre-portioned ingrdients for Gusto Meals Kits best recipes delivered direct to your door!</p>
+      <div>
+      <header className=' max-w-[1100px] body-font font-poppins w-[500px] px-4 '>
+        <h3 className='capitalize text-white text-6xl font-semibold leading-[1.4]'>A chef in every tasty meal box</h3>
+        <p className='text-[#868e96] text-[16px] leading-[1.8]'>Get pre-portioned ingrdients for Gusto Meals Kits best recipes delivered direct to your door!</p>
 
       </header>
-        
+       </div> 
     </Wrapper>
   )
 }

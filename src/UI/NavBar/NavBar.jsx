@@ -15,22 +15,22 @@ const NavBar = () => {
           className="hidden md:flex gap-9 text-sm text-[var(--secondary)]"
         >
           <li className=" border-b-2 border-b-[var(--primary)] font-semibold text-[15px]">
-            <a>Home</a>
+            <a href="#0">Home</a>
           </li>
           <li className=" text-[#868e96] text-[15px]">
-            <a>Menu</a>
+            <a href="#0">Menu</a>
           </li>
           <li className=" text-[#868e96] text-[15px]">
-            <a>How it works</a>
+            <a href="#0">How it works</a>
           </li>
           <li className=" text-[#868e96] text-[15px]">
-            <a>About</a>
+            <a href="#0">About</a>
           </li>
           <li className=" text-[#868e96] text-[15px]">
-            <a>FAQS</a>
+            <a href="#0">FAQS</a>
           </li>
           <li className=" text-[#868e96] text-[15px]">
-            <a>Contact</a>
+            <a href="#0">Contact</a>
           </li>
         </ul>
         <div className="w-fit text-white font-semibold">

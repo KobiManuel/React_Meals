@@ -12,7 +12,7 @@ const NavBar = () => {
         </div>
         <ul
           id="unorderedList"
-          className="hidden md:flex gap-9 text-sm text-[var(--secondary)]"
+          className="hidden lg:flex gap-9 text-sm text-[var(--secondary)]"
         >
           <li className=" border-b-2 border-b-[var(--primary)] font-semibold text-[15px]">
             <a href="#0">Home</a>

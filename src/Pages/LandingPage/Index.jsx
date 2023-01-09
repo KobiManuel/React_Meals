@@ -1,5 +1,6 @@
 import React from 'react'
 import NavBar from '../../UI/NavBar/NavBar'
+import MealsSection from './MealsSection/Main'
 import TopSection from './TopSection/Main'
 
 const Index = () => {
@@ -7,6 +8,7 @@ const Index = () => {
     <>
     <NavBar />
    <TopSection />
+   <MealsSection />
     </>
   )
 }

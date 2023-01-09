@@ -2,6 +2,8 @@ import React from 'react'
 import Wrapper from '../../../UI/Wrapper/Wrapper'
 import tomato from './images/tomatoes.png'
 import dash from '../../../assets/dash.png'
+import Button from '../../../UI/Button/Button'
+import styles from '../../../UI/Button/TransparentBtn.module.css'
 
 const MealsSection = () => {
   return (
@@ -14,6 +16,14 @@ const MealsSection = () => {
             <h5 className='text-4xl text-[var(--secondary)] font-semibold'>Favorite meals</h5>
             <img src={dash} alt='/' className='w-[300px] h-[60px] mt-[-9px]'/>
         </header>
+        <div>
+          <Button className={styles.button}>all categories</Button>
+          <Button className={styles.button}>ketogenic</Button>
+          <Button className={styles.button}>low carb</Button>
+          <Button className={styles.button}>low calorie</Button>
+          <Button className={styles.button}>plant based</Button>
+          <Button className={styles.button}>trendy</Button>
+        </div>
         </div>
     </Wrapper>
   )

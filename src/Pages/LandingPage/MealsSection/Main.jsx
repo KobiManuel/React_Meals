@@ -6,8 +6,23 @@ import Button from '../../../UI/Button/Button'
 import styles from '../../../UI/Button/TransparentBtn.module.css'
 import MealCard from '../../../UI/Cards/MealCard/MealCard'
 import bowl1 from './images/bowl1.png'
+import bowl2 from './images/bowl2.png'
+import bowl3 from './images/bowl3.png'
+import bowl4 from './images/bowl4.png'
+import bowl5 from './images/bowl5.png'
+import bowl6 from './images/box6.png'
+import bowl7 from './images/box7.png'
+import bowl8 from './images/box8png.png'
+import { useState } from 'react'
 
 const MealsSection = () => {
+    const [visible, setVisible] = useState(4);
+    const showMoreOrLessHandler = (event) => {
+        setVisible((prevValue) => prevValue + 4);
+        if (event.target.textContent === "Show Less") {
+          setVisible((prevValue) => prevValue - prevValue + 4);
+        }
+      };
   return (
     <Wrapper bg_color=" bg-white z-10" >
         <div className=' max-w-[1100px] mx-auto px-16'>
@@ -26,7 +41,19 @@ const MealsSection = () => {
           <Button className={styles.button}>plant based</Button>
           <Button className={styles.button}>trendy</Button>
         </div>
-        <MealCard meal={bowl1} mealNametop="Grilled" mealNameBottom="chicken parmesan" />
+        <div className='grid grid-cols-4 gap-6'>
+        <MealCard meal={bowl1} mealNametop="Grilled" mealNameBottom="chicken parmesan"  />
+        <MealCard meal={bowl2} mealNametop="jalapeno" mealNameBottom="popper platter" />
+        <MealCard meal={bowl3} mealNametop="sun-dried" mealNameBottom="tomato chicken" />
+        <MealCard meal={bowl4} mealNametop="spicy-turkey" mealNameBottom="poblano bowl" />
+        <MealCard meal={bowl5} mealNametop="Grilled" mealNameBottom="chicken parmesan" />
+        <MealCard meal={bowl6} mealNametop="Grilled" mealNameBottom="chicken parmesan" />
+        <MealCard meal={bowl7} mealNametop="Grilled" mealNameBottom="chicken parmesan" />
+        <MealCard meal={bowl8} mealNametop="Grilled" mealNameBottom="chicken parmesan" />
+        </div>
+        <div className=' w-fit mx-auto mt-12' >
+            <Button onClick={showMoreOrLessHandler}> {visible === MealCard.length ? "Show Less" : "Show More"}</Button>
+        </div>
         </div>
     </Wrapper>
   )

@@ -5,16 +5,74 @@ import dash from "../../../assets/dash.png";
 import Button from "../../../UI/Button/Button";
 import styles from "../../../UI/Button/TransparentBtn.module.css";
 import MealCard from "../../../UI/Cards/MealCard/MealCard";
+import bowl1 from "./images/bowl1.png";
+import bowl2 from "./images/bowl2.png";
+import bowl3 from "./images/bowl3.png";
+import bowl4 from "./images/bowl4.png";
+import bowl5 from "./images/bowl5.png";
+import bowl6 from "./images/box6.png";
+import bowl7 from "./images/box7.png";
+import bowl8 from "./images/box8png.png";
 import { useState } from "react";
-import { MealCardInfo } from "./MealCardInfo";
+
 const MealsSection = () => {
   const [visible, setVisible] = useState(4);
-  const showMoreOrLessHandler = (event) => {
+  const showMoreOrLessHandler = () => {
     setVisible((prevValue) => prevValue + 4);
-    if (event.target.textContent === "Show Less") {
+    if (visible === content.length) {
       setVisible((prevValue) => prevValue - prevValue + 4);
     }
   };
+  let content = [
+    <MealCard
+      meal={bowl1}
+      mealNametop="Grilled"
+      mealNameBottom="chicken parmesan"
+      key={Math.random().toString()}
+    />,
+    <MealCard
+      meal={bowl2}
+      mealNametop="jalapeno"
+      mealNameBottom="popper platter"
+      key={Math.random().toString()}
+    />,
+    <MealCard
+      meal={bowl3}
+      mealNametop="sun-dried"
+      mealNameBottom="tomato chicken"
+      key={Math.random().toString()}
+    />,
+    <MealCard
+      meal={bowl4}
+      mealNametop="spicy-turkey"
+      mealNameBottom="poblano bowl"
+      key={Math.random().toString()}
+    />,
+    <MealCard
+      meal={bowl5}
+      mealNametop="Grilled"
+      mealNameBottom="chicken parmesan"
+      key={Math.random().toString()}
+    />,
+    <MealCard
+      meal={bowl6}
+      mealNametop="Grilled"
+      mealNameBottom="chicken parmesan"
+      key={Math.random().toString()}
+    />,
+    <MealCard
+      meal={bowl7}
+      mealNametop="Grilled"
+      mealNameBottom="chicken parmesan"
+      key={Math.random().toString()}
+    />,
+    <MealCard
+      meal={bowl8}
+      mealNametop="Grilled"
+      mealNameBottom="chicken parmesan"
+      key={Math.random().toString()}
+    />,
+  ];
   return (
     <Wrapper bg_color=" bg-white z-10">
       <div className=" max-w-[1100px] mx-auto px-16">
@@ -36,20 +94,12 @@ const MealsSection = () => {
           <Button className={styles.button}>trendy</Button>
         </div>
         <div className="grid grid-cols-4 gap-6">
-          {MealCardInfo.slice(0, visible).map(
-            ({ meal, mealNameTop, mealNameBottom }) => (
-              <MealCard
-                meal={meal}
-                mealNametop={mealNameTop}
-                mealNameBottom={mealNameBottom}
-              />
-            )
-          )}
+          {content.slice(0, visible)}
         </div>
         <div className=" w-fit mx-auto mt-12">
           <Button onClick={showMoreOrLessHandler}>
             {" "}
-            {visible === MealCard.length ? "Show Less" : "Show More"}
+            {visible === content.length ? "Show Less" : "Show More"}
           </Button>
         </div>
       </div>

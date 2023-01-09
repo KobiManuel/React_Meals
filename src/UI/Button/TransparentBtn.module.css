@@ -1,6 +1,6 @@
 .button {
-    color: white;
-    border: 1px white solid !important;
+    color: #868e96;
+    border: 1px #868e96 solid !important;
     font-size: 14px;
     border-radius: 0.5em;
     width: fit-content;
@@ -43,4 +43,7 @@
 }
 .button span:nth-child(4) {
     --n: 4;
+}
+.button .active {
+    background-color: var(--primary);
 }

@@ -8,7 +8,7 @@ import styles from '../../../UI/Button/TransparentBtn.module.css'
 const MealsSection = () => {
   return (
     <Wrapper bg_color=" bg-white z-10" >
-        <div className=' max-w-[1100px] mx-auto px-8'>
+        <div className=' max-w-[1100px] mx-auto px-16'>
         <figure className='w-fit relative -translate-y-[35%] translate-x-6 !mr-0'>
             <img src={tomato} alt="/" className=' w-[220px]' />
         </figure>
@@ -16,7 +16,7 @@ const MealsSection = () => {
             <h5 className='text-4xl text-[var(--secondary)] font-semibold'>Favorite meals</h5>
             <img src={dash} alt='/' className='w-[300px] h-[60px] mt-[-9px]'/>
         </header>
-        <div>
+        <div className='flex flex-row justify-between -translate-y-[150%] '>
           <Button className={styles.button}>all categories</Button>
           <Button className={styles.button}>ketogenic</Button>
           <Button className={styles.button}>low carb</Button>

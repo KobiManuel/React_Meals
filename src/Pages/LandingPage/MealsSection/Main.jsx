@@ -5,6 +5,7 @@ import dash from '../../../assets/dash.png'
 import Button from '../../../UI/Button/Button'
 import styles from '../../../UI/Button/TransparentBtn.module.css'
 import MealCard from '../../../UI/Cards/MealCard/MealCard'
+import bowl1 from './images/bowl1.png'
 
 const MealsSection = () => {
   return (
@@ -25,7 +26,7 @@ const MealsSection = () => {
           <Button className={styles.button}>plant based</Button>
           <Button className={styles.button}>trendy</Button>
         </div>
-        <MealCard />
+        <MealCard meal={bowl1} mealNametop="Grilled" mealNameBottom="chicken parmesan" />
         </div>
     </Wrapper>
   )

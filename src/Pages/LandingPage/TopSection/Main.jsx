@@ -2,7 +2,7 @@ import React from "react";
 import Button from "../../../UI/Button/Button";
 import Wrapper from "../../../UI/Wrapper/Wrapper";
 import hero_bg from "./images/Hero2.jpg";
-import styles from '../../../UI/Button/TransparentBtn.module.css';
+import styles from "../../../UI/Button/TransparentBtn.module.css";
 
 const TopSection = () => {
   return (

@@ -14,7 +14,7 @@ import bowl6 from './images/box6.png'
 import bowl7 from './images/box7.png'
 import bowl8 from './images/box8png.png'
 import { useState } from 'react'
-
+import { MealCardInfo } from './MealCardInfo'
 const MealsSection = () => {
     const [visible, setVisible] = useState(4);
     const showMoreOrLessHandler = (event) => {
@@ -42,15 +42,8 @@ const MealsSection = () => {
           <Button className={styles.button}>trendy</Button>
         </div>
         <div className='grid grid-cols-4 gap-6'>
-        <MealCard meal={bowl1} mealNametop="Grilled" mealNameBottom="chicken parmesan"  />
-        <MealCard meal={bowl2} mealNametop="jalapeno" mealNameBottom="popper platter" />
-        <MealCard meal={bowl3} mealNametop="sun-dried" mealNameBottom="tomato chicken" />
-        <MealCard meal={bowl4} mealNametop="spicy-turkey" mealNameBottom="poblano bowl" />
-        <MealCard meal={bowl5} mealNametop="Grilled" mealNameBottom="chicken parmesan" />
-        <MealCard meal={bowl6} mealNametop="Grilled" mealNameBottom="chicken parmesan" />
-        <MealCard meal={bowl7} mealNametop="Grilled" mealNameBottom="chicken parmesan" />
-        <MealCard meal={bowl8} mealNametop="Grilled" mealNameBottom="chicken parmesan" />
-        </div>
+
+               </div>
         <div className=' w-fit mx-auto mt-12' >
             <Button onClick={showMoreOrLessHandler}> {visible === MealCard.length ? "Show Less" : "Show More"}</Button>
         </div>

@@ -1,6 +1,5 @@
 import React from "react";
 import Button from "../../../UI/Button/Button";
-import Wrapper from "../../../UI/Wrapper/Wrapper";
 import hero_bg from "./images/Hero2.jpg";
 import styles from "../../../UI/Button/TransparentBtn.module.css";
 import pan from './images/pan.png'
@@ -25,7 +24,7 @@ const TopSection = () => {
               A chef in every tasty meal box
             </h3>
             <p className="text-[#868e96] text-[16px] leading-[1.8]">
-              Get pre-portioned ingrdients for Gusto Meals Kits best recipes
+              Get pre-portioned ingredients for React Meals Kits's best recipes
               delivered direct to your door!
             </p>
           </header>
@@ -34,7 +33,7 @@ const TopSection = () => {
             <Button className={styles.button}>View Menu </Button>
           </div>
         </div>
-        <div className=" w-fit">
+        <div className=" w-fit z-50">
           <img src={pan} alt="/" />
         </div>
       </div>

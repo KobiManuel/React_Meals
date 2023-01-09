@@ -4,7 +4,7 @@ const Wrapper = (props) => {
   return (
     <div
       id={props.id}
-      className={`py-[96px] ${props.bg_color} relative`}
+      className={`py-[96px] ${props.bg_color}`}
       style={props.style}
     >
       {props.children}

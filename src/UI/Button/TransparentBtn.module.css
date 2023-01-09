@@ -44,6 +44,6 @@
 .button span:nth-child(4) {
     --n: 4;
 }
-.button .active {
-    background-color: var(--primary);
+.button:has(.acctive){
+    background-color: var(--primary)!important;
 }

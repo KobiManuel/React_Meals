@@ -4,6 +4,7 @@ import tomato from './images/tomatoes.png'
 import dash from '../../../assets/dash.png'
 import Button from '../../../UI/Button/Button'
 import styles from '../../../UI/Button/TransparentBtn.module.css'
+import MealCard from '../../../UI/Cards/MealCard/MealCard'
 
 const MealsSection = () => {
   return (
@@ -18,12 +19,13 @@ const MealsSection = () => {
         </header>
         <div className='flex flex-row justify-between -translate-y-[150%] '>
           <Button className={styles.button}>all categories</Button>
-          <Button className={styles.button}>ketogenic</Button>
+          <Button className={`!acctive ${styles.button}`}>ketogenic</Button>
           <Button className={styles.button}>low carb</Button>
           <Button className={styles.button}>low calorie</Button>
           <Button className={styles.button}>plant based</Button>
           <Button className={styles.button}>trendy</Button>
         </div>
+        <MealCard />
         </div>
     </Wrapper>
   )

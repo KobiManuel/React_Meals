@@ -3,10 +3,11 @@ import Button from "../../../UI/Button/Button";
 import Wrapper from "../../../UI/Wrapper/Wrapper";
 import hero_bg from "./images/Hero2.jpg";
 import styles from "../../../UI/Button/TransparentBtn.module.css";
+import pan from './images/pan.png'
 
 const TopSection = () => {
   return (
-    <Wrapper
+    <div
       style={{
         backgroundImage: "url(" + hero_bg + ")",
         backgroundSize: "cover",
@@ -14,11 +15,11 @@ const TopSection = () => {
         backgroundPosition: "center center",
         width: "100%",
         maxWidth: "100%",
-        height: "fit-content",
+        height: "500px",
       }}
     >
-      <div className="max-w-[1100px] mx-auto">
-        <div className=" w-fit flex flex-col gap-9">
+      <div className=" mx-auto flex flex-row h-fit">
+        <div className=" w-fit h-fit flex flex-col gap-9 pl-[65px] justify-self-center self-center">
           <header className=" max-w-[1100px] body-font font-poppins w-[500px] px-4 flex flex-col gap-6">
             <h3 className="capitalize text-white text-6xl font-semibold leading-[1.3]">
               A chef in every tasty meal box
@@ -33,8 +34,11 @@ const TopSection = () => {
             <Button className={styles.button}>View Menu </Button>
           </div>
         </div>
+        <div className=" w-fit">
+          <img src={pan} alt="/" />
+        </div>
       </div>
-    </Wrapper>
+    </div>
   );
 };
 

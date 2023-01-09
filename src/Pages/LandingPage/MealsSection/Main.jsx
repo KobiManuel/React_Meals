@@ -9,10 +9,12 @@ import { useState } from "react";
 import { MealCardInfo } from "./MealCardInfo";
 
 const MealsSection = () => {
+    const menuItems = [...new Set(MealCardInfo.map((Val) => Val.category))];
+    const [item, setItem] = useState(MealCardInfo);
   const [visible, setVisible] = useState(4);
   const showMoreOrLessHandler = () => {
     setVisible((prevValue) => prevValue + 4);
-    if (visible === MealCardInfo.length) {
+    if (visible === item.length) {
       setVisible((prevValue) => prevValue - prevValue + 4);
     }
   };
@@ -38,11 +40,11 @@ const MealsSection = () => {
           <Button className={styles.button}>trendy</Button>
         </div>
         <div className="grid grid-cols-4 gap-6">
-          {MealCardInfo.slice(0, visible).map(
-            ({ meal, mealNametop, mealNameBottom }) => (
+          {item.slice(0, visible).map(
+            ({ meal, mealNameTop, mealNameBottom }) => (
               <MealCard
                 meal={meal}
-                mealNametop={mealNametop}
+                mealNametop={mealNameTop}
                 mealNameBottom={mealNameBottom}
                 key={Math.random().toString()}
               />
@@ -51,7 +53,7 @@ const MealsSection = () => {
         </div>
         <div className=" w-fit mx-auto mt-12">
           <Button onClick={showMoreOrLessHandler}>
-            {visible === MealCardInfo.length ? "Show Less" : "Show More"}
+            {visible === item.length ? "Show Less" : "Show More"}
           </Button>
         </div>
       </div>

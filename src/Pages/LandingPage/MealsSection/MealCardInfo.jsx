@@ -27,101 +27,121 @@ export const MealCardInfo = [
     meal: bowl1,
     mealNameTop: "Grilled",
     mealNameBottom: "chicken parmesan",
+    category: "ketogenic"
   },
   {
     meal: bowl2,
     mealNameTop: "jalapeno",
     mealNameBottom: "popper platter",
+    category: "ketogenic"
   },
   {
     meal: bowl3,
     mealNameTop: "sun-dried",
     mealNameBottom: "tomato chicken",
+    category: "ketogenic"
   },
   {
     meal: bowl4,
     mealNameTop: "spicy-turkey",
     mealNameBottom: "poblano bowl",
+    category: "ketogenic"
   },
   {
     meal: bowl5,
     mealNameTop: "Grilled",
     mealNameBottom: "chicken parmesan",
+    category: "Low Carb"
   },
   {
     meal: bowl6,
     mealNameTop: "Grilled",
     mealNameBottom: "chicken parmesan",
+    category: "Low Carb"
   },
   {
     meal: bowl7,
     mealNameTop: "Grilled",
     mealNameBottom: "chicken parmesan",
+    category: "Low Carb"
   },
   {
     meal: bowl8,
     mealNameTop: "Grilled",
     mealNameBottom: "chicken parmesan",
+    category: "Low Carb"
   },
   {
     meal: bowl9,
     mealNameTop: "Grilled",
     mealNameBottom: "chicken parmesan",
+    category: "Low Calorie"
   },
   {
     meal: bowl10,
     mealNameTop: "Grilled",
     mealNameBottom: "chicken parmesan",
+    category: "Low Calorie"
   },
   {
     meal: bowl11,
     mealNameTop: "Grilled",
     mealNameBottom: "chicken parmesan",
+    category: "Low Calorie"
   },
   {
     meal: bowl12,
     mealNameTop: "Grilled",
     mealNameBottom: "chicken parmesan",
+    category: "Low Calorie"
   },
   {
     meal: bowl13,
     mealNameTop: "Grilled",
     mealNameBottom: "chicken parmesan",
+    category: "Plant Based"
   },
   {
     meal: bowl14,
     mealNameTop: "Grilled",
     mealNameBottom: "chicken parmesan",
+    category: "Plant Based"
   },
   {
     meal: bowl15,
     mealNameTop: "Grilled",
     mealNameBottom: "chicken parmesan",
+    category: "Plant Based"
   },
   {
     meal: bowl16,
     mealNameTop: "Grilled",
     mealNameBottom: "chicken parmesan",
+    category: "Plant Based"
   },
   {
     meal: bowl17,
     mealNameTop: "Grilled",
     mealNameBottom: "chicken parmesan",
+    category: "Trendy"
   },
   {
     meal: bowl18,
     mealNameTop: "Grilled",
     mealNameBottom: "chicken parmesan",
+    category: "Trendy"
   },
   {
     meal: bowl19,
     mealNameTop: "Grilled",
     mealNameBottom: "chicken parmesan",
+    category: "Trendy"
   },
   {
     meal: bowl20,
     mealNameTop: "Grilled",
     mealNameBottom: "chicken parmesan",
+    category: "Trendy"
   },
   {
     meal: bowl21,

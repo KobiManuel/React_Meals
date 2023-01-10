@@ -3,7 +3,6 @@ import Wrapper from "../../../UI/Wrapper/Wrapper";
 import tomato from "./images/tomatoes.png";
 import dash from "../../../assets/dash.png";
 import Button from "../../../UI/Button/Button";
-import styles from "../../../UI/Button/TransparentBtn.module.css";
 import MealCard from "../../../UI/Cards/MealCard/MealCard";
 import { useState } from "react";
 import { MealCardInfo } from "./MealCardInfo";
@@ -15,7 +14,8 @@ const MealsSection = () => {
   const menuItems = [...new Set(MealCardInfo.map((Val) => Val.category))];
 
   const filterItem = (curcat) => {
-    const newItem = Data.filter((newVal) => {
+    const newItem = MealCardInfo.filter((newVal) => {
+        
       return newVal.category === curcat;
     });
     setItem(newItem);
@@ -42,9 +42,7 @@ const MealsSection = () => {
           <img src={dash} alt="/" className="w-[300px] h-[60px] mt-[-9px]" />
         </header>
         <div className="w-full">
-          <Btn menuItems={menuItems} setItem={setItem}>
-            {" "}
-          </Btn>
+          <Btn menuItems={menuItems} setItem={setItem}  filterItem={filterItem} />
         </div>
         <div className="grid grid-cols-4 gap-6">
           {item
@@ -58,11 +56,12 @@ const MealsSection = () => {
               />
             ))}
         </div>
-        <div className=" w-fit mx-auto mt-12">
+        {item === MealCardInfo ? <div className=" w-fit mx-auto mt-12">
           <Button onClick={showMoreOrLessHandler}>
             {visible === item.length ? "Show Less" : "Show More"}
           </Button>
-        </div>
+        </div> : " " }
+        
       </div>
     </Wrapper>
   );

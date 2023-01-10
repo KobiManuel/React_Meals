@@ -4,7 +4,7 @@ import styles from "./Button.module.css";
 const Button = ({ children, type, className, onClick }) => {
   return (
     <button
-    onClick={onClick}
+      onClick={onClick}
       className={`${styles.button} ${className} font-medium body-font font-poppins`}
     >
       {children}

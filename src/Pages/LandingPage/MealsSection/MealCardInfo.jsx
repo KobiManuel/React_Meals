@@ -17,7 +17,7 @@ import bowl17 from "./images/box17.png";
 import bowl18 from "./images/box18.png";
 import bowl19 from "./images/box19.png";
 import bowl20 from "./images/box20.png";
-import bowl21 from "./images/box21.png";
+import bowl21 from "./images/box23.png";
 
 export const MealCardInfo = [
   {

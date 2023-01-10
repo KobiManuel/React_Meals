@@ -2,7 +2,7 @@ import React from "react";
 import Button from "../../../UI/Button/Button";
 import hero_bg from "./images/Hero2.jpg";
 import styles from "../../../UI/Button/TransparentBtn.module.css";
-import pan from './images/pan.png'
+import pan from "./images/pan.png";
 
 const TopSection = () => {
   return (

@@ -1,4 +1,5 @@
 import React from 'react'
+import Header from '../../../UI/Header/Header'
 import Wrapper from '../../../UI/Wrapper/Wrapper'
 import hero_bg from '../TopSection/images/Hero2.jpg'
 
@@ -12,8 +13,11 @@ const Services = () => {
         backgroundPosition: "center center",
         width: "100%",
         maxWidth: "100%",
-        height: "500px",
+        height: "fit-content",
       }}>
+        <div className=' max-w-[1100px] mx-auto'>
+          <Header title="why react meals?" text_color="text-white" />
+        </div>
 
     </Wrapper>
   )

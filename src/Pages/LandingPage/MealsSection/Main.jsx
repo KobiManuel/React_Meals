@@ -1,12 +1,12 @@
 import React from "react";
 import Wrapper from "../../../UI/Wrapper/Wrapper";
 import tomato from "./images/tomatoes.png";
-import dash from "../../../assets/dash.png";
 import Button from "../../../UI/Button/Button";
 import MealCard from "../../../UI/Cards/MealCard/MealCard";
 import { useState } from "react";
 import { MealCardInfo } from "./MealCardInfo";
 import Btn from "../../../UI/Button/Btn";
+import Header from "../../../UI/Header/Header";
 
 const MealsSection = () => {
   const [item, setItem] = useState(MealCardInfo);
@@ -35,12 +35,7 @@ const MealsSection = () => {
         <figure className="w-fit relative -translate-y-[35%] translate-x-6 !mr-0">
           <img src={tomato} alt="/" className=" w-[220px]" />
         </figure>
-        <header className="capitalize body-font font-poppins text-center w-fit mx-auto -translate-y-[100%] ">
-          <h5 className="text-4xl text-[var(--secondary)] font-semibold">
-            Favorite meals
-          </h5>
-          <img src={dash} alt="/" className="w-[300px] h-[60px] mt-[-9px]" />
-        </header>
+       <Header title="favorite meals" text_color="text-[var(--secondary)]" />
         <div className="w-full">
           <Btn menuItems={menuItems} setItem={setItem}  filterItem={filterItem} />
         </div>

@@ -15,7 +15,6 @@ const MealsSection = () => {
 
   const filterItem = (curcat) => {
     const newItem = MealCardInfo.filter((newVal) => {
-        
       return newVal.category === curcat;
     });
     setItem(newItem);
@@ -42,7 +41,11 @@ const MealsSection = () => {
           <img src={dash} alt="/" className="w-[300px] h-[60px] mt-[-9px]" />
         </header>
         <div className="w-full">
-          <Btn menuItems={menuItems} setItem={setItem}  filterItem={filterItem} />
+          <Btn
+            menuItems={menuItems}
+            setItem={setItem}
+            filterItem={filterItem}
+          />
         </div>
         <div className="grid grid-cols-4 gap-6">
           {item
@@ -56,12 +59,15 @@ const MealsSection = () => {
               />
             ))}
         </div>
-        {item === MealCardInfo ? <div className=" w-fit mx-auto mt-12">
-          <Button onClick={showMoreOrLessHandler}>
-            {visible === item.length ? "Show Less" : "Show More"}
-          </Button>
-        </div> : " " }
-        
+        {item === MealCardInfo ? (
+          <div className=" w-fit mx-auto mt-12">
+            <Button onClick={showMoreOrLessHandler}>
+              {visible === item.length ? "Show Less" : "Show More"}
+            </Button>
+          </div>
+        ) : (
+          " "
+        )}
       </div>
     </Wrapper>
   );

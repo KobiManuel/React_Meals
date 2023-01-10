@@ -22,7 +22,7 @@ const Btn = ({ setItem, menuItems, filterItem }) => {
           );
         })}
         <button
-        autoFocus
+          autoFocus
           className={`${styles.button}  font-medium body-font font-poppins focus:!bg-[var(--primary)] focus:text-white focus:outline-none`}
           onClick={() => setItem(MealCardInfo)}
         >

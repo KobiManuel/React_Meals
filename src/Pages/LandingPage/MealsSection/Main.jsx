@@ -10,11 +10,16 @@ import { MealCardInfo } from "./MealCardInfo";
 import Btn from "../../../UI/Button/Btn";
 
 const MealsSection = () => {
-    const menuItems = [...new Set(MealCardInfo.map((Val) => Val.category))];
+  const [item, setItem] = useState(MealCardInfo);
 
+  const menuItems = [...new Set(MealCardInfo.map((Val) => Val.category))];
 
-    const [item, setItem] = useState(MealCardInfo);
-
+  const filterItem = (curcat) => {
+    const newItem = Data.filter((newVal) => {
+      return newVal.category === curcat;
+    });
+    setItem(newItem);
+  };
 
   const [visible, setVisible] = useState(4);
   const showMoreOrLessHandler = () => {
@@ -37,19 +42,21 @@ const MealsSection = () => {
           <img src={dash} alt="/" className="w-[300px] h-[60px] mt-[-9px]" />
         </header>
         <div className="w-full">
-          <Btn menuItems={menuItems} setItem={setItem}> </Btn>
+          <Btn menuItems={menuItems} setItem={setItem}>
+            {" "}
+          </Btn>
         </div>
         <div className="grid grid-cols-4 gap-6">
-          {item.slice(0, visible).map(
-            ({ meal, mealNameTop, mealNameBottom, id}) => (
+          {item
+            .slice(0, visible)
+            .map(({ meal, mealNameTop, mealNameBottom, id }) => (
               <MealCard
                 meal={meal}
                 mealNametop={mealNameTop}
                 mealNameBottom={mealNameBottom}
                 key={id}
               />
-            )
-          )}
+            ))}
         </div>
         <div className=" w-fit mx-auto mt-12">
           <Button onClick={showMoreOrLessHandler}>

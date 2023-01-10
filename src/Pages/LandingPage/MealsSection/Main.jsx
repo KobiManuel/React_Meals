@@ -7,10 +7,15 @@ import styles from "../../../UI/Button/TransparentBtn.module.css";
 import MealCard from "../../../UI/Cards/MealCard/MealCard";
 import { useState } from "react";
 import { MealCardInfo } from "./MealCardInfo";
+import Btn from "../../../UI/Button/Btn";
 
 const MealsSection = () => {
     const menuItems = [...new Set(MealCardInfo.map((Val) => Val.category))];
+
+
     const [item, setItem] = useState(MealCardInfo);
+
+
   const [visible, setVisible] = useState(4);
   const showMoreOrLessHandler = () => {
     setVisible((prevValue) => prevValue + 4);
@@ -31,22 +36,17 @@ const MealsSection = () => {
           </h5>
           <img src={dash} alt="/" className="w-[300px] h-[60px] mt-[-9px]" />
         </header>
-        <div className="flex flex-row justify-between -translate-y-[150%] ">
-          <Button className={styles.button}>all categories</Button>
-          <Button className={`!acctive ${styles.button}`}>ketogenic</Button>
-          <Button className={styles.button}>low carb</Button>
-          <Button className={styles.button}>low calorie</Button>
-          <Button className={styles.button}>plant based</Button>
-          <Button className={styles.button}>trendy</Button>
+        <div className="w-full">
+          <Btn menuItems={menuItems} setItem={setItem}> </Btn>
         </div>
         <div className="grid grid-cols-4 gap-6">
           {item.slice(0, visible).map(
-            ({ meal, mealNameTop, mealNameBottom }) => (
+            ({ meal, mealNameTop, mealNameBottom, id}) => (
               <MealCard
                 meal={meal}
                 mealNametop={mealNameTop}
                 mealNameBottom={mealNameBottom}
-                key={Math.random().toString()}
+                key={id}
               />
             )
           )}
@@ -60,5 +60,12 @@ const MealsSection = () => {
     </Wrapper>
   );
 };
-
+/*  <div className="flex flex-row justify-between -translate-y-[150%] ">
+          <Button className={styles.button}>all categories</Button>
+          <Button className={`!acctive ${styles.button}`}>ketogenic</Button>
+          <Button className={styles.button}>low carb</Button>
+          <Button className={styles.button}>low calorie</Button>
+          <Button className={styles.button}>plant based</Button>
+          <Button className={styles.button}>trendy</Button>
+        </div> */
 export default MealsSection;

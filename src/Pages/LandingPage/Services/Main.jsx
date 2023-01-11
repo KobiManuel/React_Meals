@@ -18,9 +18,29 @@ const Services = () => {
     >
       <div className=" max-w-[1100px] mx-auto">
         <Header title="why react meals?" text_color="text-white" />
-        <div className=" w-full grid grid-cols-3 body-font font-poppins">
-          <div>
-            <span className="w-[20px] h-[20px] rounded-full bg-white"></span>
+        <div className=" w-full grid grid-cols-3 body-font font-poppins gap-7">
+          <div className=" flex flex-row text-white  justify-center items-center gap-4">
+            <span className="w-[50px] h-[50px] rounded-full bg-white"></span>
+            <p className="text-2xl font-semibold">Easy and Convenient</p>
+          </div>
+          <div className=" flex flex-row text-white  justify-center items-center gap-4">
+            <span className="w-[50px] h-[50px] rounded-full bg-white"></span>
+            <p className="text-2xl font-semibold">Easy and Convenient</p>
+          </div>
+          <div className=" flex flex-row text-white  justify-center items-center gap-4">
+            <span className="w-[50px] h-[50px] rounded-full bg-white"></span>
+            <p className="text-2xl font-semibold">Easy and Convenient</p>
+          </div>
+          <div className=" flex flex-row text-white  justify-center items-center gap-4">
+            <span className="w-[50px] h-[50px] rounded-full bg-white"></span>
+            <p className="text-2xl font-semibold">Easy and Convenient</p>
+          </div>
+          <div className=" flex flex-row text-white  justify-center items-center gap-4">
+            <span className="w-[50px] h-[50px] rounded-full bg-white"></span>
+            <p className="text-2xl font-semibold">Easy and Convenient</p>
+          </div>
+          <div className=" flex flex-row text-white  justify-center items-center gap-4">
+            <span className="w-[50px] h-[50px] rounded-full bg-white"></span>
             <p className="text-2xl font-semibold">Easy and Convenient</p>
           </div>
         </div>

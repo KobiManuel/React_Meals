@@ -18,6 +18,9 @@ const Services = () => {
     >
       <div className=" max-w-[1100px] mx-auto">
         <Header title="why react meals?" text_color="text-white" />
+        <div className=" w-full grid grid-cols-3">
+            
+        </div>
       </div>
     </Wrapper>
   );

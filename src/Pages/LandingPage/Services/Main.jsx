@@ -20,8 +20,8 @@ const Services = () => {
         <Header title="why react meals?" text_color="text-white" />
         <div className=" w-full grid grid-cols-3">
           <div>
-            <span></span>
-            <p>Easy and Convenient</p>
+            <span className="w-[20px] h-[20px] rounded-full bg-white"></span>
+            <p className="text-2xl font-semibold">Easy and Convenient</p>
           </div>
         </div>
       </div>

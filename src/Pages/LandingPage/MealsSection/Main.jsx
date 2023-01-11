@@ -20,6 +20,11 @@ const MealsSection = () => {
     setItem(newItem);
   };
 
+const [popUp, setpopUp] = useState();
+const changeContent = () => {
+    setpopUp(MealCardInfo);
+}
+  
   const [visible, setVisible] = useState(4);
   const showMoreOrLessHandler = () => {
     setVisible((prevValue) => prevValue + 4);
@@ -50,12 +55,13 @@ const MealsSection = () => {
         <div className="grid grid-cols-4 gap-6">
           {item
             .slice(0, visible)
-            .map(({ meal, mealNameTop, mealNameBottom, id }) => (
+            .map(({ meal, mealNameTop, mealNameBottom, id, onClick}) => (
               <MealCard
                 meal={meal}
                 mealNametop={mealNameTop}
                 mealNameBottom={mealNameBottom}
                 key={id}
+                onClick={changeContent}
               />
             ))}
         </div>
@@ -68,7 +74,20 @@ const MealsSection = () => {
         ) : (
           " "
         )}
+        {
+            popUp === MealCardInfo ?     <div className="w-full h-fit">
+            {item.map((pop) => {
+             return (
+             <div key={pop.id}>
+                 <p className="text-black text-">Kobiiiiiii{pop.mealNameTop}</p>
+                  </div>
+             )
+ })}
+         </div> : " "
+        }
+    
       </div>
+
     </Wrapper>
   );
 };

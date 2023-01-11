@@ -25,23 +25,23 @@ const Services = () => {
           </div>
           <div className=" flex flex-row text-white  justify-center items-center gap-4">
             <span className="w-[50px] h-[50px] rounded-full bg-white"></span>
-            <p className="text-2xl font-light">Easy and Convenient</p>
+            <p className="text-xl font-light">Easy and Convenient</p>
           </div>
           <div className=" flex flex-row text-white  justify-center items-center gap-4">
             <span className="w-[50px] h-[50px] rounded-full bg-white"></span>
-            <p className="text-2xl font-light">Easy and Convenient</p>
+            <p className="text-xl font-light">Easy and Convenient</p>
           </div>
           <div className=" flex flex-row text-white  justify-center items-center gap-4">
             <span className="w-[50px] h-[50px] rounded-full bg-white"></span>
-            <p className="text-2xl font-light">Easy and Convenient</p>
+            <p className="text-xl font-light">Easy and Convenient</p>
           </div>
           <div className=" flex flex-row text-white  justify-center items-center gap-4">
             <span className="w-[50px] h-[50px] rounded-full bg-white"></span>
-            <p className="text-2xl font-light">Easy and Convenient</p>
+            <p className="text-xl font-light">Easy and Convenient</p>
           </div>
           <div className=" flex flex-row text-white  justify-center items-center gap-4">
             <span className="w-[50px] h-[50px] rounded-full bg-white"></span>
-            <p className="text-2xl font-light">Easy and Convenient</p>
+            <p className="text-xl font-light">Easy and Convenient</p>
           </div>
         </div>
       </div>

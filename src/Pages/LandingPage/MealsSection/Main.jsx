@@ -19,12 +19,11 @@ const MealsSection = () => {
     });
     setItem(newItem);
   };
+  
+  const [mealTop, setmealTop] = useState("");
 
-  const [view, setView] = useState(1);
-  const [popUp, setpopUp] = useState();
-  const changeContent = () => {
-    setpopUp(MealCardInfo);
-    setView((prevView) => prevView + 1 );
+  const changeContent = (value) => {
+   setmealTop(value)
   };
    
 
@@ -77,14 +76,14 @@ const MealsSection = () => {
         ) : (
           " "
         )}
-        {popUp === MealCardInfo ? (
+        <span>{mealTop}</span>
+        {/* {popUp === MealCardInfo ? (
           <div className="w-full h-fit">
-            {item.slice(0, view
-            ).map((pop) => {
+            {item.map(({mealNameTop, id}) => {
               return (
-                <div key={pop.id}>
+                <div key={id}>
                   <p className="text-black text-">
-                    Kobiiiiiii{pop.mealNameTop}
+                    Kobiiiiiii{mealNameTop}
                   </p>
                 </div>
               );
@@ -92,7 +91,7 @@ const MealsSection = () => {
           </div>
         ) : (
           " "
-        )}
+        )} */}
       </div>
     </Wrapper>
   );

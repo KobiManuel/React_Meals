@@ -9,7 +9,7 @@ const Announcement = () => {
     <header className="capitalize body-font font-poppins text-center w-fit mx-auto -translate-y-[100%] ">
           <h5 className="text-4xl text-[var
             (--secondary)] font-semibold">
-            Favorite meals
+            Watch it work
           </h5>
           <img src={dash} alt="/" className="w-[300px] h-[60px] mt-[-9px]" />
         </header>

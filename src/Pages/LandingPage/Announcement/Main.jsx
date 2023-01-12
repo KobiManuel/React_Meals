@@ -2,7 +2,9 @@ import React from 'react'
 import Wrapper from '../../../UI/Wrapper/Wrapper'
 import dash from '../../../assets/dash.png'
 import AnnouncementCard from './AnnouncementCard'
-
+import box1 from './images/box1.png'
+import box2 from './images/box2.png'
+import box3 from './images/box3.png'
 const Announcement = () => {
   return (
     <Wrapper bg_color=" bg-stone-200">
@@ -14,8 +16,10 @@ const Announcement = () => {
           </h5>
           <img src={dash} alt="/" className="w-[300px] h-[60px] mt-[-9px]" />
         </header>
-        <div className='grid grid-cols-3'>
-           {}
+        <div className='grid grid-cols-3 gap-[7rem] px-10'>
+           <AnnouncementCard image={box1} top_text="choose your meals" bottom_text="20+ menus to choose from" />
+           <AnnouncementCard image={box2} top_text="we deliver it to you" bottom_text="Choose your dates for delivery" />
+           <AnnouncementCard image={box3} top_text="ccook & enjoy" bottom_text="Eat your freshly cooked meal" />
         </div>
     </div>
     </Wrapper>

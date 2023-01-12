@@ -20,10 +20,13 @@ const MealsSection = () => {
     setItem(newItem);
   };
 
+  const [view, setView] = useState(1);
   const [popUp, setpopUp] = useState();
   const changeContent = () => {
     setpopUp(MealCardInfo);
+    setView((prevView) => prevView + 1 );
   };
+   
 
   const [visible, setVisible] = useState(4);
   const showMoreOrLessHandler = () => {
@@ -76,7 +79,8 @@ const MealsSection = () => {
         )}
         {popUp === MealCardInfo ? (
           <div className="w-full h-fit">
-            {item.map((pop) => {
+            {item.slice(0, view
+            ).map((pop) => {
               return (
                 <div key={pop.id}>
                   <p className="text-black text-">

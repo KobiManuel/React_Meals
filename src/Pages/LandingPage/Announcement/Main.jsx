@@ -5,37 +5,12 @@ import AnnouncementCard from "./AnnouncementCard";
 import box1 from "./images/box1.png";
 import box2 from "./images/box2.png";
 import box3 from "./images/box3.png";
+import TopSection from "./TopSection";
 const Announcement = () => {
   return (
     <Wrapper bg_color=" bg-stone-100">
       <div className="max-w-[1100px] mx-auto flex flex-col gap-9">
-        <header className="capitalize body-font font-poppins text-center w-fit mx-auto">
-          <h5
-            className="text-4xl text-[var
-            (--secondary)] font-semibold"
-          >
-            Watch it work
-          </h5>
-          <img src={dash} alt="/" className="w-[300px] h-[60px] mt-[-9px]" />
-        </header>
-        <div className="grid grid-cols-3 gap-[3rem] px-[90px]">
-          <AnnouncementCard
-            image={box1}
-            top_text="choose your meals"
-            bottom_text="20+ menus to choose from"
-          />
-          <AnnouncementCard
-            image={box2}
-            top_text="we deliver it to you"
-            bottom_text="Choose your dates for delivery"
-            position="mt-9"
-          />
-          <AnnouncementCard
-            image={box3}
-            top_text="ccook & enjoy"
-            bottom_text="Eat your freshly cooked meal"
-          />
-        </div>
+       <TopSection />
       </div>
     </Wrapper>
   );

@@ -1,8 +1,11 @@
 import React from 'react'
+import Wrapper from '../../../UI/Wrapper/Wrapper'
 
 const Announcement = () => {
   return (
-    <div>Announcement</div>
+    <Wrapper>
+        
+    </Wrapper>
   )
 }
 

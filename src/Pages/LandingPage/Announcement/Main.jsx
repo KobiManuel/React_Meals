@@ -6,7 +6,7 @@ const Announcement = () => {
   return (
     <Wrapper bg_color="bg-white">
     <div className='max-w-[1100px] mx-auto'>
-    <header className="capitalize body-font font-poppins text-center w-fit mx-auto -translate-y-[100%] ">
+    <header className="capitalize body-font font-poppins text-center w-fit mx-auto">
           <h5 className="text-4xl text-[var
             (--secondary)] font-semibold">
             Watch it work

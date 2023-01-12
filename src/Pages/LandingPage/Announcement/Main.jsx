@@ -28,6 +28,7 @@ const Announcement = () => {
             image={box2}
             top_text="we deliver it to you"
             bottom_text="Choose your dates for delivery"
+            position="mt-5"
           />
           <AnnouncementCard
             image={box3}

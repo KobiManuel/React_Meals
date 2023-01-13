@@ -19,13 +19,12 @@ const MealsSection = () => {
     });
     setItem(newItem);
   };
-  
+
   const [mealTop, setmealTop] = useState("");
 
   const changeContent = (value) => {
-   setmealTop(value)
+    setmealTop(value);
   };
-   
 
   const [visible, setVisible] = useState(4);
   const showMoreOrLessHandler = () => {

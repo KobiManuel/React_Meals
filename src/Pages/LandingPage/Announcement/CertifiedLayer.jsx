@@ -30,6 +30,7 @@ const CertifiedLayer = () => {
           </div>
         </div>
         </div>
+        <img src={pepper} alt="/" className='absolute w-[240px] bottom-[-50px] right-[-50px]' />
     </div>
   )
 }

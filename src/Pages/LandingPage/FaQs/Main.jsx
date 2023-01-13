@@ -1,10 +1,11 @@
 import React from 'react'
+import Wrapper from '../../../UI/Wrapper/Wrapper'
 
 const FaQs = () => {
   return (
-    <div>
+    <Wrapper>
         
-    </div>
+    </Wrapper>
   )
 }
 

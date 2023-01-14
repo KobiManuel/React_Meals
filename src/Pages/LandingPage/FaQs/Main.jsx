@@ -1,10 +1,22 @@
-import React from "react";
+import React, {useState} from "react";
 import Button from "../../../UI/Button/Button";
 import Wrapper from "../../../UI/Wrapper/Wrapper";
 import Accordion from "./Accordion";
 import { AccordionData } from "./AccordionData";
 
 const FaQs = () => {
+  const [open, setOpen] = useState(false);
+  const toggle = (index) => {
+    if (open === index) {
+      setOpen(false);
+    }
+    else if (open === null) {
+      setOpen(!open)
+    }
+    else {
+    setOpen(index);
+    }
+  };
   return (
     <Wrapper bg_color="bg-white">
       <div className=" max-w-[1100px] mx-auto px-12 body-font font-poppins flex flex-col gap-[5rem]">
@@ -18,8 +30,8 @@ const FaQs = () => {
           <Button>Contact us</Button>
         </header>
         <div className="flex flex-col">
-            {AccordionData.map(({ index, title, description }) => (
-                <Accordion index={index} title={title} description={description} />
+            {AccordionData.map((data, index) => (
+                <Accordion key={index} open={index === open} title={data.title} description={data.description} toggle={() => toggle(index)} />
             ) )}
         </div>
       </div>

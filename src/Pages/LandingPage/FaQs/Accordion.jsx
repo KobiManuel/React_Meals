@@ -1,17 +1,10 @@
-import React, { useState } from "react";
+
 import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
 
-const Accordion = ({ index, title, description }) => {
-  const [open, setOpen] = useState(false);
-  const openHandler = (index) => {
-    setOpen(!false);
-    if (open === !false) {
-      setOpen(false);
-    }
-  };
+const Accordion = ({open, toggle, index, title, description }) => {
   return (
     <div
-      onClick={() => openHandler(index)}
+      onClick={toggle}
       className={
         !open
           ? "body-font font-poppins py-9 px-9 flex flex-row  justify-between w-full h-fit bg-stone-100 hover:bg-black hover:rounded-[2rem] border-b-[1px] border-b-gray-300 first:rounded-t-3xl last:rounded-b-3xl"

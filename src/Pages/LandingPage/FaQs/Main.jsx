@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import Button from "../../../UI/Button/Button";
 import Wrapper from "../../../UI/Wrapper/Wrapper";
 import Accordion from "./Accordion";
@@ -9,12 +9,10 @@ const FaQs = () => {
   const toggle = (index) => {
     if (open === index) {
       setOpen(false);
-    }
-    else if (open === null) {
-      setOpen(!open)
-    }
-    else {
-    setOpen(index);
+    } else if (open === null) {
+      setOpen(!open);
+    } else {
+      setOpen(index);
     }
   };
   return (
@@ -30,9 +28,15 @@ const FaQs = () => {
           <Button>Contact us</Button>
         </header>
         <div className="flex flex-col">
-            {AccordionData.map((data, index) => (
-                <Accordion key={index} open={index === open} title={data.title} description={data.description} toggle={() => toggle(index)} />
-            ) )}
+          {AccordionData.map((data, index) => (
+            <Accordion
+              key={index}
+              open={index === open}
+              title={data.title}
+              description={data.description}
+              toggle={() => toggle(index)}
+            />
+          ))}
         </div>
       </div>
     </Wrapper>

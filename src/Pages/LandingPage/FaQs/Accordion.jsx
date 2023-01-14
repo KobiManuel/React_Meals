@@ -1,7 +1,6 @@
-
 import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
 
-const Accordion = ({open, toggle, index, title, description }) => {
+const Accordion = ({ open, toggle, index, title, description }) => {
   return (
     <div
       onClick={toggle}

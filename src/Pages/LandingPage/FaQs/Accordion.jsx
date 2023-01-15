@@ -1,6 +1,6 @@
 import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
 
-const Accordion = ({ open, toggle, index, title, description }) => {
+const Accordion = ({ open, toggle, index, title, description, id }) => {
   return (
     <div
       onClick={toggle}
@@ -10,7 +10,7 @@ const Accordion = ({ open, toggle, index, title, description }) => {
           : "body-font font-poppins py-9 px-9 flex flex-row  justify-between w-full h-fit bg-black hover:rounded-[2rem] border-b-[1px] border-b-gray-300 first:rounded-t-3xl last:rounded-b-3xl"
       }
     >
-      <span className=" text-4xl text-gray-300 font-semibold">{index}</span>
+      <span className=" text-4xl text-gray-300 font-semibold">{id}</span>
       <div className=" flex flex-col gap-6 w-[500px]">
         <h5
           className={

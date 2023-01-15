@@ -35,6 +35,7 @@ const FaQs = () => {
               title={data.title}
               description={data.description}
               toggle={() => toggle(index)}
+              id={data.id}
             />
           ))}
         </div>

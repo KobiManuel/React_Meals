@@ -22,7 +22,7 @@ const FaQs = () => {
           <h3 className="capitalize text-4xl text-[var(--secondary)] font-semibold ">
             frequently asked questions
           </h3>
-          <p className=" text-sm text-gray-400">
+          <p className=" text-sm text-[#868e96] font-medium">
             Check out frequently asked questions for answers
           </p>
           <Button>Contact us</Button>

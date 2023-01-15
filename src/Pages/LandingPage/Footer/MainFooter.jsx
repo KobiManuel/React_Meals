@@ -1,5 +1,6 @@
 import React from 'react'
 import footer_bg from '../TopSection/images/Hero2.jpg'
+import signature from '../Announcement/images/signature.png'
 
 const MainFooter = () => {
   return (
@@ -21,9 +22,12 @@ const MainFooter = () => {
           <h3 className=" text-2xl font-semibold text-[var(--primary)]">
             React <span className="text-white">Meals</span>
           </h3>
+          <div>
+              <img src={signature} alt="/" />
+            </div>
         </div>
           <div className='pl-2 flex flex-col gap-6'>
-            <p className=' text-stone-300 text-xs'>The fictional Address of the React Meals Kit made up in KobiLand</p>
+            <p className=' text-stone-200 text-xs'>The fictional Address of the React Meals Kit made up in KobiLand</p>
             <div className='flex flex-row gap-5'>
                 <span className=' w-[40px] h-[40px] rounded-full bg-white'></span>
                 <span  className=' w-[40px] h-[40px] rounded-full  bg-white'></span>

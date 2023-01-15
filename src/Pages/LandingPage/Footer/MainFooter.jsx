@@ -12,8 +12,9 @@ const MainFooter = () => {
         width: "100%",
         maxWidth: "100%",
         height: "500px",
+        filter: "brightness(0.30)"
       }}>
-
+       
     </Wrapper>
   )
 }

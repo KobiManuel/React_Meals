@@ -13,9 +13,9 @@ const MainFooter = () => {
         backgroundAttachment: "fixed",
         width: "100%",
         maxWidth: "100%",
-        height: "450px"
+        height: "550px"
       }} className="absolute before:content-[''] before:absolute brightness-[0.30] z-[-1]"> </div>
-       <div className=' max-w-[1100px] mx-auto body-font font-poppins py-[96px]'>
+       <div className=' max-w-[1100px] mx-auto body-font font-poppins pb-[96px] pt-[200px]'>
            <div className=' grid grid-cols-5 justify-center items-center'>
             <header className=' flex flex-col gap-8'>
            <div className="pl-2 w-fit flex flex-row">

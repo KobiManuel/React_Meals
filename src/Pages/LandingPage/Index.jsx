@@ -5,6 +5,7 @@ import FaQs from "./FaQs/Main";
 import MealsSection from "./MealsSection/Main";
 import Services from "./Services/Main";
 import TopSection from "./TopSection/Main";
+import Footer from "./Footer/Main";
 
 const Index = () => {
   return (
@@ -15,6 +16,7 @@ const Index = () => {
       <Services />
       <Announcement />
       <FaQs />
+      <Footer />
     </>
   );
 };

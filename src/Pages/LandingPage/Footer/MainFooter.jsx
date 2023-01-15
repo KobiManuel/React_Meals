@@ -1,9 +1,10 @@
 import React from 'react'
+import Wrapper from '../../../UI/Wrapper/Wrapper'
 import footer_bg from '../TopSection/images/Hero2.jpg'
 
 const MainFooter = () => {
   return (
-    <div  style={{
+    <Wrapper  style={{
         backgroundImage: "url(" + footer_bg + ")",
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
@@ -13,7 +14,7 @@ const MainFooter = () => {
         height: "500px",
       }}>
 
-    </div>
+    </Wrapper>
   )
 }
 

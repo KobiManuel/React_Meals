@@ -1,9 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 
 const NavBar = () => {
+   //making navbar sticky on scroll
+  const [sticky, setSticky] = useState(false);
+  const stickyScrollHandler = () => {
+    if (window.scrollY >= 200) {
+      setSticky(true);
+    } else {
+      setSticky(false);
+    }
+  };
+  window.addEventListener("scroll", stickyScrollHandler);
   return (
-    <div className=" shadow-xl bg-white body-font font-poppins">
+    <div className={sticky ? " shadow-xl fixed w-full z-[1500] transition-all duration-500 ease-in delay-150 bg-white body-font font-poppins" : " shadow-xl bg-white body-font font-poppins"}>
       <div className=" max-w-[1100px] flex bg-white items-center justify-between gap-9 h-24 mx-auto">
         <div className="pl-2 w-fit flex flex-row">
           <h3 className=" text-2xl font-semibold text-[var(--primary)]">

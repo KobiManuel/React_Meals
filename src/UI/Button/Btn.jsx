@@ -1,6 +1,6 @@
 import React from "react";
 import { MealCardInfo } from "../../Pages/LandingPage/MealsSection/MealCardInfo";
-import styles from "./TransparentBtn.module.css";
+import styles from "./BtnTransparent.module.css";
 
 const Btn = ({ setItem, menuItems, filterItem }) => {
   return (

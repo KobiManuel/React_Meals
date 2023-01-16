@@ -17,7 +17,7 @@ const TopSection = () => {
         height: "500px",
       }}
      className=" max-[1040px]:!h-fit">
-      <div className=" mx-auto flex flex-row h-fit">
+      <div className=" mx-auto flex flex-row h-fit max-[1040px]:py-6">
         <div className=" w-fit h-fit flex flex-col gap-9 ml-[65px] justify-self-center self-center">
           <header className=" max-w-[1100px] body-font font-poppins w-[500px] px-4 flex flex-col gap-6">
             <h3 className="capitalize text-white text-6xl font-semibold leading-[1.3]">

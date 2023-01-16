@@ -16,7 +16,7 @@ const MainFooter = () => {
           maxWidth: "100%",
           height: "550px",
         }}
-        className="absolute before:content-[''] before:absolute brightness-[0.30] z-[-1]"
+        className="absolute before:content-[''] before:absolute brightness-[0.40] z-[-1]"
       >
         {" "}
       </div>

@@ -28,7 +28,7 @@ const TopSection = () => {
               delivered direct to your door!
             </p>
           </header>
-          <div className="w-fit pl-4 flex flex-row gap-8 max-[380px]:flex-col">
+          <div className="w-fit pl-4 flex flex-row gap-8 max-[380px]:flex-col  max-[515px]:mx-auto  max-[515px]:pl-0 ">
             <Button>Select program </Button>
             <Button className={styles.button}>View Menu </Button>
           </div>

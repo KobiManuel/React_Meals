@@ -38,3 +38,5 @@ const Btn = ({ setItem, menuItems, filterItem }) => {
 };
 
 export default Btn;
+
+/*  <div className="flex flex-row justify-between -translate-y-[110%] max-[1040px]:gap-4 max-[615px]:flex-col max-[615px]:items-center max-[615px]:translate-y-0 "> */

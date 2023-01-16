@@ -1,68 +1,68 @@
 .button {
-    color: #868e96;
-    border: 1px #868e96 solid !important;
-    font-size: 14px;
-    border-radius: 0.5em;
-    width: fit-content;
-    text-transform: capitalize;
-    overflow: hidden;
-    z-index: 1;
-    transition: 0.5s;
-    padding: 12px 18px;
-    width: 150px;
-    position: relative;
-    background-color: transparent !important;
-    text-align: center !important;
+  color: #868e96;
+  border: 1px #868e96 solid !important;
+  font-size: 14px;
+  border-radius: 0.5em;
+  width: fit-content;
+  text-transform: capitalize;
+  overflow: hidden;
+  z-index: 1;
+  transition: 0.5s;
+  padding: 12px 18px;
+  width: 150px;
+  position: relative;
+  background-color: transparent !important;
+  text-align: center !important;
 }
 .button span {
-    position: absolute;
-    width: 25%;
-    height: 100%;
-    background-color: var(--primary);
-    transform: translateY(150%);
-    border-radius: 50%;
-    left: calc((var(--n) - 1) * 25%);
-    transition: 0.5s;
-    transition-delay: calc((var(--n) - 1) * 0.1s);
-    z-index: -1;
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  background-color: var(--primary);
+  transform: translateY(150%);
+  border-radius: 50%;
+  left: calc((var(--n) - 1) * 25%);
+  transition: 0.5s;
+  transition-delay: calc((var(--n) - 1) * 0.1s);
+  z-index: -1;
 }
 .button:hover {
-    color:white;
-    border-color: transparent !important;
+  color: white;
+  border-color: transparent !important;
 }
 .button:hover span {
-    transform: translateY(0) scale(2);
+  transform: translateY(0) scale(2);
 }
 .button span:nth-child(1) {
-    --n: 1;
+  --n: 1;
 }
 .button span:nth-child(2) {
-    --n: 2;
+  --n: 2;
 }
 .button span:nth-child(3) {
-    --n: 3;
+  --n: 3;
 }
 .button span:nth-child(4) {
-    --n: 4;
+  --n: 4;
 }
-.button:has(.acctive){
-    background-color: var(--primary)!important;
+.button:has(.acctive) {
+  background-color: var(--primary) !important;
 }
 
 @media screen and (max-width: 635px) {
-    .button {
-      width: 100px;
-      font-size: 10px;
-      text-align: center;
-      padding: 6px 0;
-    }
+  .button {
+    width: 100px;
+    font-size: 10px;
+    text-align: center;
+    padding: 6px 0;
   }
+}
 
-  @media screen and (max-width: 354px) {
-    .button {
-      width: 80px;
-      font-size: 8px;
-      text-align: center;
-      padding: 6px 3px;
-    }
+@media screen and (max-width: 354px) {
+  .button {
+    width: 80px;
+    font-size: 8px;
+    text-align: center;
+    padding: 6px 3px;
   }
+}

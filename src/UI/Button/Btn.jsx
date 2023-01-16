@@ -5,11 +5,11 @@ import styles from "./TransparentBtn.module.css";
 const Btn = ({ setItem, menuItems, filterItem }) => {
   return (
     <>
-      <div className="grid grid-cols-6 -translate-y-[110%] ">
+      <div className="grid grid-cols-6 -translate-y-[110%] max-[1040px]:grid-cols-3 gap-y-4 items-center ">
         {menuItems.map((Val, id) => {
           return (
             <button
-              className={`${styles.button} font-medium body-font font-poppins focus:!bg-[var(--primary)] focus:text-white focus:outline-none`}
+              className={`${styles.button} font-medium body-font font-poppins focus:!bg-[var(--primary)] focus:text-white focus:outline-none justify-self-center self-center`}
               key={id}
               onClick={() => filterItem(Val)}
             >
@@ -23,7 +23,7 @@ const Btn = ({ setItem, menuItems, filterItem }) => {
         })}
         <button
           autoFocus
-          className={`${styles.button}  font-medium body-font font-poppins focus:!bg-[var(--primary)] focus:text-white focus:outline-none`}
+          className={`${styles.button}  font-medium body-font font-poppins focus:!bg-[var(--primary)] focus:text-white focus:outline-none justify-self-center self-center`}
           onClick={() => setItem(MealCardInfo)}
         >
           All Categories

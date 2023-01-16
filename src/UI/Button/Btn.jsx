@@ -5,7 +5,7 @@ import styles from "./TransparentBtn.module.css";
 const Btn = ({ setItem, menuItems, filterItem }) => {
   return (
     <>
-      <div className="flex flex-row justify-between -translate-y-[110%] max-[1040px]:gap-4 max-[615px]:flex-col max-[615px]:items-center max-[615px]:translate-y-0 ">
+      <div className="grid grid-cols-6 -translate-y-[110%] ">
         {menuItems.map((Val, id) => {
           return (
             <button

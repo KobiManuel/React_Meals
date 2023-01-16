@@ -12,6 +12,7 @@
     width: 150px;
     position: relative;
     background-color: transparent !important;
+    text-align: center !important;
 }
 .button span {
     position: absolute;
@@ -47,3 +48,12 @@
 .button:has(.acctive){
     background-color: var(--primary)!important;
 }
+
+@media screen and (max-width: 1040px) {
+    .button {
+      width: 100px;
+      font-size: 10px;
+      text-align: center;
+      padding: 6px 0;
+    }
+  }

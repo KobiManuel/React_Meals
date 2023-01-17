@@ -53,7 +53,7 @@ const MealsSection = () => {
             filterItem={filterItem}
           />
         </div>
-        <div className="grid grid-cols-4 gap-6">
+        <div className="grid grid-cols-4 gap-6 max-[1029px]:grid-cols-3 max-[812px]:grid-cols-2 max-[618px]:grid-cols-1">
           {item
             .slice(0, visible)
             .map(({ meal, mealNameTop, mealNameBottom, id, onClick, price }) => (

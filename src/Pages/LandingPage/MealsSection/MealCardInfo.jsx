@@ -26,6 +26,7 @@ export const MealCardInfo = [
     mealNameTop: "Grilled",
     mealNameBottom: "chicken parmesan",
     category: "ketogenic",
+    price: "$99.2"
   },
   {
     id: "2",
@@ -33,6 +34,7 @@ export const MealCardInfo = [
     mealNameTop: "jalapeno",
     mealNameBottom: "popper platter",
     category: "ketogenic",
+    price: "$69.0"
   },
   {
     id: "3",
@@ -40,6 +42,7 @@ export const MealCardInfo = [
     mealNameTop: "sun-dried",
     mealNameBottom: "tomato chicken",
     category: "ketogenic",
+    price: "$44.6"
   },
   {
     id: "4",
@@ -47,6 +50,7 @@ export const MealCardInfo = [
     mealNameTop: "spicy-turkey",
     mealNameBottom: "poblano bowl",
     category: "ketogenic",
+    price: "$39.5"
   },
   {
     id: "5",
@@ -54,6 +58,7 @@ export const MealCardInfo = [
     mealNameTop: "fried",
     mealNameBottom: "turkey barbecue",
     category: "Low Carb",
+    price: "$51.7"
   },
   {
     id: "6",
@@ -61,6 +66,7 @@ export const MealCardInfo = [
     mealNameTop: "Roasted",
     mealNameBottom: "chicken suya",
     category: "Low Carb",
+    price: "$91.2"
   },
   {
     id: "7",
@@ -68,6 +74,7 @@ export const MealCardInfo = [
     mealNameTop: "salted",
     mealNameBottom: "beef kebab",
     category: "Low Carb",
+    price: "$76.7"
   },
   {
     id: "8",
@@ -75,6 +82,7 @@ export const MealCardInfo = [
     mealNameTop: "Blended",
     mealNameBottom: "baked turkey",
     category: "Low Carb",
+    price: "$41.7"
   },
   {
     id: "9",
@@ -82,6 +90,7 @@ export const MealCardInfo = [
     mealNameTop: "Mixed",
     mealNameBottom: "suya coleslaw",
     category: "Low Calorie",
+    price: "$65.4"
   },
   {
     id: "10",
@@ -89,6 +98,7 @@ export const MealCardInfo = [
     mealNameTop: "stir-fried",
     mealNameBottom: "bolognese sauce",
     category: "Low Calorie",
+    price: "$89.4"
   },
   {
     id: "11",
@@ -96,6 +106,7 @@ export const MealCardInfo = [
     mealNameTop: "tenderized",
     mealNameBottom: "pheasant thighs",
     category: "Low Calorie",
+    price: "$48.2"
   },
   {
     id: "12",
@@ -103,6 +114,7 @@ export const MealCardInfo = [
     mealNameTop: "steamed",
     mealNameBottom: "Goat meat",
     category: "Low Calorie",
+    price: "$73.7"
   },
   {
     id: "13",
@@ -110,6 +122,7 @@ export const MealCardInfo = [
     mealNameTop: "Veggie",
     mealNameBottom: "salad combo",
     category: "Plant Based",
+    price: "$80.5"
   },
   {
     id: "14",
@@ -117,6 +130,7 @@ export const MealCardInfo = [
     mealNameTop: "smoked",
     mealNameBottom: "fig-tree leaves",
     category: "Plant Based",
+    price: "$70.6"
   },
   {
     id: "15",
@@ -124,6 +138,7 @@ export const MealCardInfo = [
     mealNameTop: "boiled",
     mealNameBottom: "chinese eggs",
     category: "Plant Based",
+    price: "$60.5"
   },
   {
     id: "16",
@@ -131,6 +146,7 @@ export const MealCardInfo = [
     mealNameTop: "flavoured",
     mealNameBottom: "rabbit stew",
     category: "Plant Based",
+    price: "$50.4"
   },
   {
     id: "17",
@@ -138,6 +154,7 @@ export const MealCardInfo = [
     mealNameTop: "spicy",
     mealNameBottom: "chicken peppersoup",
     category: "Trendy",
+    price: "$40.3"
   },
   {
     id: "18",
@@ -145,6 +162,7 @@ export const MealCardInfo = [
     mealNameTop: "air-fried",
     mealNameBottom: "catfish stew",
     category: "Trendy",
+    price: "$30.2"
   },
   {
     id: "19",
@@ -152,6 +170,7 @@ export const MealCardInfo = [
     mealNameTop: "salted",
     mealNameBottom: "caramel sauce",
     category: "Trendy",
+    price: "70.9"
   },
   {
     id: "20",
@@ -159,5 +178,6 @@ export const MealCardInfo = [
     mealNameTop: "baked",
     mealNameBottom: "pork soup",
     category: "Trendy",
+    price: "$60.8"
   },
 ];

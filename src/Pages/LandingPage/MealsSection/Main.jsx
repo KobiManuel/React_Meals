@@ -56,13 +56,14 @@ const MealsSection = () => {
         <div className="grid grid-cols-4 gap-6">
           {item
             .slice(0, visible)
-            .map(({ meal, mealNameTop, mealNameBottom, id, onClick }) => (
+            .map(({ meal, mealNameTop, mealNameBottom, id, onClick, price }) => (
               <MealCard
                 meal={meal}
                 mealNametop={mealNameTop}
                 mealNameBottom={mealNameBottom}
                 key={id}
                 onClick={changeContent}
+                price={price}
               />
             ))}
         </div>

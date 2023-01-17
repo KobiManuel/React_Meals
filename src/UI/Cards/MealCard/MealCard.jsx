@@ -17,7 +17,7 @@ const MealCard = ({ meal, mealNametop, mealNameBottom, id, onClick, price }) => 
           <p>{mealNameBottom}</p>
         </div>
         <div className="absolute h-full w-full bg-black/20 flex flex-col items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
-          <span className="text-sm font-semibold body-font font-poppins text-[var(--secondary)] ">{price}</span>
+          <span className="text-lg font-semibold body-font font-poppins text-white ">{price}</span>
           <Button onClick={() => onClick(mealNametop)}>add to cart</Button>
         </div>
       </div>

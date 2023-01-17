@@ -37,8 +37,8 @@ const MealsSection = () => {
   return (
     <Wrapper bg_color=" bg-white z-10">
       <div className=" max-w-[1100px] mx-auto px-16">
-        <figure className="w-fit relative -translate-y-[35%] translate-x-6 !mr-0 max-[846px]:-translate-y-[65%] max-[846px]:-translate-x-9 ">
-          <img src={tomato} alt="/" className=" w-[220px]" />
+        <figure className="w-fit relative -translate-y-[35%] translate-x-6 !mr-0 max-[846px]:-translate-y-[65%] max-[846px]:-translate-x-9 max-[571px]:-translate-y-[95%] max-[571px]:-translate-x-[4.5rem] ">
+          <img src={tomato} alt="/" className=" w-[220px] max-[571px]:w-[150px]" />
         </figure>
         <header className="capitalize body-font font-poppins text-center w-fit mx-auto -translate-y-[100%] ">
           <h5 className="text-4xl text-[var(--secondary)] font-semibold">

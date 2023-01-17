@@ -41,7 +41,7 @@ const MealsSection = () => {
           <img src={tomato} alt="/" className=" w-[220px] max-[571px]:w-[150px]" />
         </figure>
         <header className="capitalize body-font font-poppins text-center w-fit mx-auto -translate-y-[100%] ">
-          <h5 className="text-4xl text-[var(--secondary)] font-semibold">
+          <h5 className="text-4xl text-[var(--secondary)] font-semibold  max-[410px]:text-2xl">
             Favorite meals
           </h5>
           <img src={dash} alt="/" className="w-[300px] h-[60px] mt-[-9px]" />

@@ -1,6 +1,12 @@
 import React from 'react'
 
-const ShoppingCart = () => {
+const ShoppingCart = ({
+    visibility,
+    products,
+    onProductsRemove,
+    onClose,
+    onQuantityChange
+}) => {
   return (
     <div>ShoppingCart</div>
   )

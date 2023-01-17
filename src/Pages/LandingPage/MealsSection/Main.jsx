@@ -40,11 +40,11 @@ const MealsSection = () => {
         <figure className="w-fit relative -translate-y-[35%] translate-x-6 !mr-0 max-[846px]:-translate-y-[65%] max-[846px]:-translate-x-9 max-[571px]:-translate-y-[95%] max-[571px]:-translate-x-[4.5rem] ">
           <img src={tomato} alt="/" className=" w-[220px] max-[571px]:w-[150px]" />
         </figure>
-        <header className="capitalize body-font font-poppins text-center w-fit mx-auto -translate-y-[100%] ">
+        <header className="capitalize body-font font-poppins text-center w-fit mx-auto -translate-y-[100%]  max-[462px]:mb-9 ">
           <h5 className="text-4xl text-[var(--secondary)] font-semibold  max-[410px]:text-2xl">
             Favorite meals
           </h5>
-          <img src={dash} alt="/" className="w-[300px] h-[60px] mt-[-9px]" />
+          <img src={dash} alt="/" className="w-[300px] h-[60px] mt-[-9px] max-[410px]:w-[170px] max-[410px]:mt-[-18px]" />
         </header>
         <div className="w-full">
           <Btn

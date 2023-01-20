@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { createContext } from 'react'
 
-const Context = () => {
+const Cart = createContext();
+
+const Context = ({children}) => {
   return (
-    <div>Context</div>
+    <Cart.Provider>
+    {children}
+    </Cart.Provider>
   )
 }
 

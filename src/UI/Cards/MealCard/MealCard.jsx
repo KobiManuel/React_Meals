@@ -1,4 +1,5 @@
 import React from "react";
+import { CartState } from "../../../store/Context";
 import Button from "../../Button/Button";
 
 const MealCard = ({
@@ -9,6 +10,10 @@ const MealCard = ({
   onClick,
   price,
 }) => {
+  const {
+    state: { cart },
+    dispatch,
+  } = CartState();
   return (
     <div className="rounded-[2rem] bg-stone-100 w-[220] h-[334.67px] flex flex-col justify-center items-center">
       <div className="relative overflow-hidden w-full h-fit group">
@@ -27,7 +32,12 @@ const MealCard = ({
           <span className="text-lg font-semibold body-font font-poppins text-white ">
             {price}
           </span>
-          <Button onClick={() => onClick(mealNametop)}>add to cart</Button>
+          <Button onClick={() => {
+            dispatch({
+              type: 'ADD_TO_CART',
+              payload: id,
+            });
+          }}>add to cart</Button>
         </div>
       </div>
     </div>

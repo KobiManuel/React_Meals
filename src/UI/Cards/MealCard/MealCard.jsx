@@ -1,6 +1,6 @@
 import React from "react";
 import { CartState } from "../../../store/Context";
-import Button from "../../Button/Button";
+import styles from '../../Button/Button.module.css';
 
 const MealCard = ({
   meal,
@@ -11,7 +11,7 @@ const MealCard = ({
   price,
 }) => {
   const {
-    state: { cart },
+    state: { Cart },
     dispatch,
   } = CartState();
   return (
@@ -32,12 +32,17 @@ const MealCard = ({
           <span className="text-lg font-semibold body-font font-poppins text-white ">
             {price}
           </span>
-          <Button onClick={() => {
+          <button className={`${styles.button} `} onClick={() => {
             dispatch({
               type: 'ADD_TO_CART',
               payload: id,
             });
-          }}>add to cart</Button>
+          }}>add to cart
+          <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      </button>
         </div>
       </div>
     </div>

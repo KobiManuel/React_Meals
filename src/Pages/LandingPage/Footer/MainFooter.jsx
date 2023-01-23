@@ -86,8 +86,8 @@ const MainFooter = () => {
               </p>
             </div>
             <div className=" flex flex-row gap-3">
-              <div class="flex px-3 py-2 bg-gray-800 text-white rounded-[2rem] items-center justify-center">
-                <div class="mr-1">
+              <div className="flex px-3 py-2 bg-gray-800 text-white rounded-[2rem] items-center justify-center">
+                <div className="mr-1">
                   <svg viewBox="0 0 384 512" width="12">
                     <path
                       fill="currentColor"
@@ -96,15 +96,15 @@ const MainFooter = () => {
                   </svg>
                 </div>
                 <div>
-                  <div class="text-[6px]">Download on the</div>
-                  <div class="text-[10px] font-semibold font-sans -mt-1">
+                  <div className="text-[6px]">Download on the</div>
+                  <div className="text-[10px] font-semibold font-sans -mt-1">
                     App Store
                   </div>
                 </div>
               </div>
 
-              <div class="flex px-3 py-2 bg-gray-800 text-white rounded-[2rem] items-center justify-center">
-                <div class="mr-1">
+              <div className="flex px-3 py-2 bg-gray-800 text-white rounded-[2rem] items-center justify-center">
+                <div className="mr-1">
                   <svg viewBox="30 336.7 120.9 129.2" width="12">
                     <path
                       fill="#FFD400"
@@ -125,8 +125,8 @@ const MainFooter = () => {
                   </svg>
                 </div>
                 <div>
-                  <div class="text-[6px]">Download on the</div>
-                  <div class="text-[10px] font-semibold font-sans -mt-1">
+                  <div className="text-[6px]">Download on the</div>
+                  <div className="text-[10px] font-semibold font-sans -mt-1">
                     App Store
                   </div>
                 </div>

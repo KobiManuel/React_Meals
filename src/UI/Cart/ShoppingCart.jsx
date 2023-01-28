@@ -5,7 +5,6 @@ const ShoppingCart = ({
   products,
   onProductsRemove,
   onClose,
-  onQuantityChange,
 }) => {
   return <div>ShoppingCart</div>;
 };

@@ -9,7 +9,7 @@ import Footer from "./Footer/Main";
 
 const Index = () => {
   return (
-    <>
+    <div className=" overflow-hidden">
       <NavBar />
       <TopSection />
       <MealsSection />
@@ -17,7 +17,7 @@ const Index = () => {
       <Announcement />
       <FaQs />
       <Footer />
-    </>
+    </div>
   );
 };
 

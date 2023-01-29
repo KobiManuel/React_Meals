@@ -28,7 +28,7 @@ const MealCard = ({ meals }) => {
           </span>
           {cart.some((p) => p.id === meals.id) ? (
             <button
-              className={`${styles.button} `}
+              className={`${styles.button} !w-fit `}
               onClick={() => {
                 dispatch({
                   type: "REMOVE_FROM_CART",

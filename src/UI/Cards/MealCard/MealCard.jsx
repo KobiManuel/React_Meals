@@ -7,6 +7,7 @@ const MealCard = ({ meals }) => {
     state: { cart },
     dispatch,
   } = CartState();
+
   return (
     <div className="rounded-[2rem] bg-stone-100 w-[220] h-[334.67px] flex flex-col justify-center items-center">
       <div className="relative overflow-hidden w-full h-fit group">
@@ -30,8 +31,8 @@ const MealCard = ({ meals }) => {
               className={`${styles.button} `}
               onClick={() => {
                 dispatch({
-                  type: "ADD_TO_CART",
-                  payload: meals.id,
+                  type: "REMOVE_FROM_CART",
+                  payload: meals,
                 });
               }}
             >
@@ -47,7 +48,7 @@ const MealCard = ({ meals }) => {
               onClick={() => {
                 dispatch({
                   type: "ADD_TO_CART",
-                  payload: meals.id,
+                  payload: meals,
                 });
               }}
             >

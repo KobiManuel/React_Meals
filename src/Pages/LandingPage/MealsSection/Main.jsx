@@ -20,11 +20,11 @@ const MealsSection = () => {
     setItem(newItem);
   };
 
-  const [mealTop, setmealTop] = useState("");
+ // const [mealTop, setmealTop] = useState("");
 
-  const changeContent = (value) => {
-    setmealTop(value);
-  };
+ // const changeContent = (value) => {
+   // setmealTop(value);
+ // };
 
   const [visible, setVisible] = useState(4);
   const showMoreOrLessHandler = () => {
@@ -65,14 +65,10 @@ const MealsSection = () => {
           {item
             .slice(0, visible)
             .map(
-              ({ meal, mealNameTop, mealNameBottom, id, onClick, price }) => (
+              (meals) => (
                 <MealCard
-                  meal={meal}
-                  mealNametop={mealNameTop}
-                  mealNameBottom={mealNameBottom}
-                  key={id}
-                  onClick={changeContent}
-                  price={price}
+                  meals={meals}
+                  key={meals.id}
                 />
               )
             )}
@@ -86,7 +82,7 @@ const MealsSection = () => {
         ) : (
           " "
         )}
-        <span>{mealTop}</span>
+    
         {/* {popUp === MealCardInfo ? (
           <div className="w-full h-fit">
             {item.map(({mealNameTop, id}) => {

@@ -25,21 +25,39 @@ const MealCard = ({ meals }) => {
           <span className="text-lg font-semibold body-font font-poppins text-white ">
             {meals.price}
           </span>
-          <button
-            className={`${styles.button} `}
-            onClick={() => {
-              dispatch({
-                type: "ADD_TO_CART",
-                payload: id,
-              });
-            }}
-          >
-            add to cart
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
+          {cart.some((p) => p.id === meals.id) ? (
+            <button
+              className={`${styles.button} `}
+              onClick={() => {
+                dispatch({
+                  type: "ADD_TO_CART",
+                  payload: meals.id,
+                });
+              }}
+            >
+              remove from cart
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          ) : (
+            <button
+              className={`${styles.button} `}
+              onClick={() => {
+                dispatch({
+                  type: "ADD_TO_CART",
+                  payload: meals.id,
+                });
+              }}
+            >
+              add to cart
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          )}
         </div>
       </div>
     </div>

@@ -52,7 +52,7 @@ const NavBar = () => {
         <div className="w-fit text-white font-semibold pr-2">
           <button className=" rounded-full bg-[var(--primary)] px-4 py-2 flex flex-row justify-between gap-3 text-sm">
             <AiOutlineShoppingCart className=" flex self-center" size={20} />{" "}
-            Your Cart<span className=" bg-orange-800 rounded-full px-3">0</span>
+            Your Cart<span className=" bg-orange-800 rounded-full px-3">{cart.length}</span>
           </button>
         </div>
       </div>

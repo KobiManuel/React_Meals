@@ -6,7 +6,7 @@ const NavBar = () => {
    //making navbar sticky on scroll
   const [sticky, setSticky] = useState(false);
   const stickyScrollHandler = () => {
-    if (window.scrollY >= 20) {
+    if (window.scrollY >= 200) {
       setSticky(true);
     } else {
       setSticky(false);

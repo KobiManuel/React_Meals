@@ -1,12 +1,8 @@
 import React from "react";
 import dash from "../../assets/dash2.png";
-import { CartState } from "../../store/Context";
 
 const Header = ({ title, text_color, position }) => {
-  const {
-    state: { cart },
-    dispatch,
-  } = CartState();
+  
   return (
     <header
       className={`${position} capitalize body-font font-poppins text-center w-fit mx-auto`}

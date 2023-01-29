@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { AiOutlineShoppingCart } from "react-icons/ai";
+import { CartState } from "../../store/Context";
 
 const NavBar = () => {
    //making navbar sticky on scroll
@@ -12,6 +13,11 @@ const NavBar = () => {
     }
   };
   window.addEventListener("scroll", stickyScrollHandler);
+
+  const {
+    state: { cart },
+    dispatch,
+  } = CartState();
   return (
     <div className={sticky ? " shadow-xl fixed w-full z-[1500] transition-all duration-500 ease-in delay-150 bg-white body-font font-poppins" : " shadow-xl bg-white body-font font-poppins"}>
       <div className=" max-w-[1100px] flex bg-white items-center justify-between gap-9 h-24 mx-auto">

@@ -15,8 +15,7 @@ const NavBar = () => {
   window.addEventListener("scroll", stickyScrollHandler);
 
   const {
-    state: { cart },
-    dispatch,
+    state: { cart }
   } = CartState();
   return (
     <div className={sticky ? " shadow-xl fixed w-full z-[1500] transition-all duration-500 ease-in delay-150 bg-white body-font font-poppins" : " shadow-xl bg-white body-font font-poppins"}>

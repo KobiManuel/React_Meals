@@ -3,7 +3,7 @@ import { AiOutlineShoppingCart } from "react-icons/ai";
 import { CartState } from "../../store/Context";
 
 const NavBar = () => {
-   //making navbar sticky on scroll
+  //making navbar sticky on scroll
   const [sticky, setSticky] = useState(false);
   const stickyScrollHandler = () => {
     if (window.scrollY >= 200) {
@@ -15,10 +15,16 @@ const NavBar = () => {
   window.addEventListener("scroll", stickyScrollHandler);
 
   const {
-    state: { cart }
+    state: { cart },
   } = CartState();
   return (
-    <div className={sticky ? " shadow-xl fixed w-full z-[1500] transition-all duration-500 ease-in delay-150 bg-white body-font font-poppins" : " shadow-xl bg-white body-font font-poppins"}>
+    <div
+      className={
+        sticky
+          ? " shadow-xl fixed w-full z-[1500] transition-all duration-500 ease-in delay-150 bg-white body-font font-poppins"
+          : " shadow-xl bg-white body-font font-poppins"
+      }
+    >
       <div className=" max-w-[1100px] flex bg-white items-center justify-between gap-9 h-24 mx-auto">
         <div className="pl-2 w-fit flex flex-row">
           <h3 className=" text-2xl font-semibold text-[var(--primary)]">
@@ -49,11 +55,15 @@ const NavBar = () => {
           </li>
         </ul>
         <div className="w-fit text-white font-semibold pr-2">
-          <button className=" rounded-full bg-[var(--primary)] px-4 py-2 flex flex-row justify-between gap-3 text-sm" onClick={() => 
-            cart >= 0 ? alert('Cart is empty') : (" ") 
-          }>
+          <button
+            className=" rounded-full bg-[var(--primary)] px-4 py-2 flex flex-row justify-between gap-3 text-sm"
+            onClick={() => (cart >= 0 ? alert("Cart is empty") : " ")}
+          >
             <AiOutlineShoppingCart className=" flex self-center" size={20} />{" "}
-            Your Cart<span className=" bg-orange-800 rounded-full px-3">{cart.length}</span>
+            Your Cart
+            <span className=" bg-orange-800 rounded-full px-3">
+              {cart.length}
+            </span>
           </button>
         </div>
       </div>

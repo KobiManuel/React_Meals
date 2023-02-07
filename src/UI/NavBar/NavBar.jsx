@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { CartState } from "../../store/Context";
+import { useNavigate } from "react-router-dom";
 
 const NavBar = () => {
+  const navigate = useNavigate();
   //making navbar sticky on scroll
   const [sticky, setSticky] = useState(false);
   const stickyScrollHandler = () => {
@@ -13,14 +15,6 @@ const NavBar = () => {
     }
   };
   window.addEventListener("scroll", stickyScrollHandler);
-
-  const [cartOpen, setCartOpen] = useState(false);
-  const cartOpenHandler = () => {
-    setCartOpen(true);
-    if (cartOpen === true) {
-      setCartOpen(false);
-    }
-  }
 
   const {
     state: { cart },
@@ -62,10 +56,10 @@ const NavBar = () => {
             <a href="#0">Contact</a>
           </li>
         </ul>
-        <div className="w-fit text-white font-semibold pr-2" onClick={cartOpenHandler}>
+        <div className="w-fit text-white font-semibold pr-2" >
           <button
             className=" rounded-full bg-[var(--primary)] px-4 py-2 flex flex-row justify-between gap-3 text-sm"
-            onClick={() => (cart >= 0 ? alert("Cart is empty") : " ")}
+            onClick={() => navigate("/shoppingCart")}
           >
             <AiOutlineShoppingCart className=" flex self-center" size={20} />{" "}
             Your Cart

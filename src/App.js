@@ -7,7 +7,7 @@ function App() {
     <Router>
         <Routes>
           <Route path="/" element={<Index />} />
-          <Route path="/apply" element={ <Cart />} />
+          <Route path="/shoppingCart" element={ <Cart />} />
         </Routes>
       </Router>
   );

@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { AiOutlineShoppingCart } from "react-icons/ai";
+import { BsCartCheckFill } from "react-icons/bs"
 import { CartState } from "../../store/Context";
 import { useNavigate } from "react-router-dom";
-import styles from "../Button/Button"
+import styles from "../Button/Button.module.css"
 
 const NavBar = () => {
   const [showModal, setShowModal] = useState(false);
@@ -83,11 +84,13 @@ const NavBar = () => {
               onClick={() => setShowModal(false)}
             ></div>
             {cart >= 0 ? (<div className="flex items-center justify-center min-h-screen px-4 py-8">
-              <div className="relative w-full h-[250px] max-w-lg p-4 mx-auto bg-white rounded-md shadow-lg flex items-center justify-center ">
+              <div className="relative w-full h-[250px] max-w-lg p-4 mx-auto bg-stone-100 rounded-md shadow-lg flex items-center justify-center ">
+                  <BsCartCheckFill size={50} className=" text-[var(--primary)]"/>
                   <p className="text-center body-font font-poppins text-[var(--secondary)] text-lg">Cart is empty</p>
               </div>
             </div>) : (<div className="flex items-center justify-center min-h-screen px-4 py-8">
-              <div className="relative w-full h-[250px] max-w-lg p-4 mx-auto bg-white rounded-md shadow-lg flex flex-col gap-3 items-center justify-center ">
+              <div className="relative w-full h-[250px] max-w-lg p-4 mx-auto bg-stone-100 rounded-md shadow-lg flex flex-col gap-3 items-center justify-center ">
+              <BsCartCheckFill size={50} className=" text-[var(--primary)]"/>
               <p className="text-center body-font font-poppins text-[var(--secondary)] text-lg">Click the button below to view cart items and checkout</p>
               <button
               className={`${styles.button} `}

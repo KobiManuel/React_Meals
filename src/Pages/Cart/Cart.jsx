@@ -1,8 +1,10 @@
 import React from "react";
 import { CartState } from "../../store/Context";
 import NavBar from "../../UI/NavBar/NavBar";
+import { useNavigate } from "react-router-dom";
 
 const Cart = () => {
+  const navigate = useNavigate();
   const {
     state: { cart },
   } = CartState();
@@ -133,7 +135,7 @@ const Cart = () => {
                   <div className="flex justify-between items-center mt-6 pt-6 border-t">
                     <div className="flex items-center">
                       <i className="fa fa-arrow-left text-sm pr-2"></i>
-                      <span className="text-md  font-medium text-blue-500">
+                      <span className="text-md  font-medium text-blue-500" onClick={() => navigate("/index") }>
                         Continue Shopping
                       </span>
                     </div>

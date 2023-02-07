@@ -14,6 +14,14 @@ const NavBar = () => {
   };
   window.addEventListener("scroll", stickyScrollHandler);
 
+  const [cartOpen, setCartOpen] = useState(false);
+  const cartOpenHandler = () => {
+    setCartOpen(true);
+    if (cartOpen === true) {
+      setCartOpen(false);
+    }
+  }
+
   const {
     state: { cart },
   } = CartState();
@@ -54,7 +62,7 @@ const NavBar = () => {
             <a href="#0">Contact</a>
           </li>
         </ul>
-        <div className="w-fit text-white font-semibold pr-2">
+        <div className="w-fit text-white font-semibold pr-2" onClick={cartOpenHandler}>
           <button
             className=" rounded-full bg-[var(--primary)] px-4 py-2 flex flex-row justify-between gap-3 text-sm"
             onClick={() => (cart >= 0 ? alert("Cart is empty") : " ")}

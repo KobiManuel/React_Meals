@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { CartState } from "../../store/Context";
 import { useNavigate } from "react-router-dom";
-import Button from "../Button/Button";
+import styles from "../Button/Button"
 
 const NavBar = () => {
   const [showModal, setShowModal] = useState(false);
@@ -89,7 +89,19 @@ const NavBar = () => {
             </div>) : (<div className="flex items-center justify-center min-h-screen px-4 py-8">
               <div className="relative w-full h-[250px] max-w-lg p-4 mx-auto bg-white rounded-md shadow-lg flex flex-col gap-3 items-center justify-center ">
               <p className="text-center body-font font-poppins text-[var(--secondary)] text-lg">Click the button below to view cart items and checkout</p>
-                  <Button>Go to cart</Button>
+              <button
+              className={`${styles.button} `}
+              onClick={() => 
+                navigate("/shoppingCart")
+              }
+              
+            >
+              add to cart
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
               </div>
             </div>)}
             

@@ -135,7 +135,7 @@ const Cart = () => {
                   <div className="flex justify-between items-center mt-6 pt-6 border-t">
                     <div className="flex items-center">
                       <i className="fa fa-arrow-left text-sm pr-2"></i>
-                      <span className="text-md  font-medium text-blue-500" onClick={() => navigate("/index") }>
+                      <span className="text-md  font-medium text-blue-500 cursor-pointer hover:text-opacity-75" onClick={() => navigate("/index") }>
                         Continue Shopping
                       </span>
                     </div>

@@ -99,7 +99,7 @@ const NavBar = () => {
               }
               
             >
-              add to cart
+              Go to cart
               <span></span>
               <span></span>
               <span></span>

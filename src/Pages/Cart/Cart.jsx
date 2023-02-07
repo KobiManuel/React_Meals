@@ -1,6 +1,10 @@
 import React from "react";
+import { CartState } from "../../store/Context";
 
 const Cart = () => {
+  const {
+    state: { cart },
+  } = CartState();
   return (
     <div className="h-screen bg-gray-300">
       <div className="py-12">

@@ -13,7 +13,7 @@ const Cart = () => {
 
                   <div className="flex justify-between items-center mt-6 pt-6">
                     <div className="flex  items-center">
-                      <img
+                      <img alt="/"
                         src="https://i.imgur.com/EEguU02.jpg"
                         width="60"
                         className="rounded-full "
@@ -51,7 +51,7 @@ const Cart = () => {
 
                   <div className="flex justify-between items-center pt-6 mt-6 border-t">
                     <div className="flex  items-center">
-                      <img
+                      <img alt="/"
                         src="https://i.imgur.com/Uv2Yqzo.jpg"
                         width="60"
                         className="rounded-full "
@@ -89,7 +89,7 @@ const Cart = () => {
 
                   <div className="flex justify-between items-center mt-6 pt-6 border-t">
                     <div className="flex  items-center">
-                      <img
+                      <img alt="/"
                         src="https://i.imgur.com/xbTAITF.jpg"
                         width="60"
                         className="rounded-full "
@@ -179,7 +179,7 @@ const Cart = () => {
                     </div>
 
                     <div className="flex justify-center  items-center flex-col">
-                      <img
+                      <img alt="/"
                         src="https://img.icons8.com/color/96/000000/mastercard-logo.png"
                         width="40"
                         className="relative right-5"

@@ -3,16 +3,24 @@ import { CartState } from "../../store/Context";
 import NavBar from "../../UI/NavBar/NavBar";
 import { useNavigate } from "react-router-dom";
 import Button from "../../UI/Button/Button";
+import { useState, useEffect } from "react";
 
 const Cart = () => {
+  const [total, setTotal] = useState();
   const navigate = useNavigate();
   const {
     state: { cart },
   } = CartState();
+
+
+  useEffect(() => {
+    setTotal(cart.reduce((accumulator, currentValue) => accumulator + Number(currentValue.price), 0));
+  }, [cart])
+  
   return (
     <>
     <NavBar />
-    <div className="h-screen bg-gray-300">
+    <div className="h-screen bg-gray-300 body-font font-poppins">
       <div className="py-12">
         <div className="max-w-md mx-auto bg-gray-100 shadow-lg rounded-lg  md:max-w-5xl">
           <div className="md:flex ">
@@ -146,8 +154,7 @@ const Cart = () => {
                         Subtotal:
                       </span>
                       <span className="text-lg font-bold text-gray-800 ">
-                        {" "}
-                        $24.90
+                        ${total}
                       </span>
                     </div>
                   </div>

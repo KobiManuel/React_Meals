@@ -16,7 +16,7 @@ const Cart = () => {
   useEffect(() => {
     setTotal(
       cart.reduce(
-        (accumulator, currentValue) => accumulator + Number(currentValue.price),
+        (accumulator, currentValue) => accumulator + Number(Math.round(currentValue.price)),
         0
       )
     );

@@ -4,7 +4,7 @@ const CartItem = ({ meals }) => {
   return (
     <div>
         
-        <div className="flex justify-between items-center mt-6 pt-6">
+        <div className="flex justify-between items-center mt-6 pt-6 border-b  border-b-gray-200">
                     <div className="flex  items-center">
                       <img alt="/"
                         src={meals.meal}

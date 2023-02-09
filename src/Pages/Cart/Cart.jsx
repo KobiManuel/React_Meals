@@ -60,7 +60,7 @@ const Cart = () => {
                       </div>
                     </div>
                   </div>
-                  <div className=" p-5 bg-gray-800 rounded overflow-visible">
+                  <div className=" p-5 bg-gray-800 rounded overflow-visible h-fit">
                     <span className="text-xl font-medium text-gray-100 block pb-3">
                       Card Details
                     </span>

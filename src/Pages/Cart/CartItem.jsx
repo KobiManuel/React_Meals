@@ -1,6 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
+import { CartState } from "../../store/Context";
 
 const CartItem = ({ meals }) => {
+    const [quantity, setQuantity] = useState(0);
+    const {
+        state: { cart },
+      } = CartState();
   return (
     <div>
       <div className="flex justify-between items-center mt-6 pt-6 border-b  border-b-gray-200">
@@ -17,12 +22,13 @@ const CartItem = ({ meals }) => {
 
         <div className="flex justify-center items-center">
           <div className="pr-8 flex ">
-            <span className="font-semibold">-</span>
+            <button className="font-semibold">-</button>
             <input
               type="text"
               className="focus:outline-none bg-gray-100 border h-6 w-8 rounded text-sm px-2 mx-2"
+              value={quantity}
             />
-            <span className="font-semibold">+</span>
+            <button className="font-semibold">+</button>
           </div>
 
           <div className="pr-8 ">

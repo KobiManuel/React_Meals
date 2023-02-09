@@ -5,7 +5,7 @@ import { cartReducer } from "./Reducers";
 const Cart = createContext();
 
 const Context = ({ children }) => {
-    const [total, setTotal] = useState();
+    const [total, setTotal] = useState("");
   const [state, dispatch] = useReducer(cartReducer, {
     products: MealCardInfo,
     cart: [],

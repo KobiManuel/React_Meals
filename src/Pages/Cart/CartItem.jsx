@@ -11,7 +11,7 @@ const CartItem = ({ meals }) => {
       useEffect(() => {
         setTotal(
           cart.reduce(
-            (accumulator, currentValue) => accumulator + Number(Math.round(currentValue.price)*quantity),
+            (accumulator, currentValue) => accumulator + Number(Math.round(currentValue.price)*quantity + 1),
             0
           )
         );

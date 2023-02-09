@@ -24,7 +24,7 @@ const MealCard = ({ meals }) => {
         </div>
         <div className="absolute h-full w-full bg-black/20 flex flex-col items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
           <span className="text-lg font-semibold body-font font-poppins text-white ">
-            {meals.price}
+            ${meals.price}
           </span>
           {cart.some((p) => p.id === meals.id) ? (
             <button

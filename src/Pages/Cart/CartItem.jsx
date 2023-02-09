@@ -22,7 +22,12 @@ const CartItem = ({ meals }) => {
 
         <div className="flex justify-center items-center">
           <div className="pr-8 flex ">
-            <button className="font-semibold">-</button>
+            <button className="font-semibold" onClick={() => {
+                setQuantity(quantity - 1)
+                if(quantity === 0) {
+                    setQuantity(0)
+                }
+            }}>-</button>
             <input
               type="text"
               className="focus:outline-none bg-gray-100 border h-6 w-8 rounded text-sm px-2 mx-2"

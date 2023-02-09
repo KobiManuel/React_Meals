@@ -1,23 +1,23 @@
 import React from 'react'
 
-const CartItem = ({}) => {
+const CartItem = ({ meals }) => {
   return (
     <div>
         
         <div className="flex justify-between items-center mt-6 pt-6">
                     <div className="flex  items-center">
                       <img alt="/"
-                        src="https://i.imgur.com/EEguU02.jpg"
+                        src={meals.meal}
                         width="60"
                         className="rounded-full "
                       />
 
                       <div className="flex flex-col ml-3">
                         <span className="md:text-md font-medium">
-                          Chicken momo
+                          {meals.mealNameTop}
                         </span>
                         <span className="text-xs font-light text-gray-400">
-                          #41551
+                          {meals.id}
                         </span>
                       </div>
                     </div>
@@ -34,7 +34,7 @@ const CartItem = ({}) => {
                       </div>
 
                       <div className="pr-8 ">
-                        <span className="text-xs font-medium">$10.50</span>
+                        <span className="text-xs font-medium">${meals.price}</span>
                       </div>
                       <div>
                         <i className="fa fa-close text-xs font-medium"></i>

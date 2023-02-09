@@ -28,7 +28,6 @@ const CartItem = ({ meals }) => {
                         <input
                           type="text"
                           className="focus:outline-none bg-gray-100 border h-6 w-8 rounded text-sm px-2 mx-2"
-                          value="1"
                         />
                         <span className="font-semibold">+</span>
                       </div>

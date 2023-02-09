@@ -31,11 +31,14 @@ const Cart = () => {
             <div className="md:flex ">
               <div className="w-full p-4 px-5 py-5">
                 <div className="md:grid md:grid-cols-3 gap-2 ">
-                  <div className="col-span-2 p-5 overflow-y-scroll h-[500px]">
+                  <div className="col-span-2 p-5">
                     <h1 className="text-xl font-medium ">Shopping Cart</h1>
+                    <div className=" overflow-y-scroll h-[400px]">
                     {cart.map((meals) => (
                       <CartItem meals={meals} key={meals.id} />
                     ))}
+                    </div>
+                   
                     <div className="flex justify-between items-center mt-6 pt-6 border-t">
                       <div className="flex items-center">
                         <i className="fa fa-arrow-left text-sm pr-2"></i>

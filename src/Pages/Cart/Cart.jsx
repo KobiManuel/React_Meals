@@ -4,6 +4,7 @@ import NavBar from "../../UI/NavBar/NavBar";
 import { useNavigate } from "react-router-dom";
 import Button from "../../UI/Button/Button";
 import { useState, useEffect } from "react";
+import CartItem from "./CartItem";
 
 const Cart = () => {
   const [total, setTotal] = useState();
@@ -66,81 +67,9 @@ const Cart = () => {
                       </div>
                     </div>
                   </div>
-
-                  <div className="flex justify-between items-center pt-6 mt-6 border-t">
-                    <div className="flex  items-center">
-                      <img alt="/"
-                        src="https://i.imgur.com/Uv2Yqzo.jpg"
-                        width="60"
-                        className="rounded-full "
-                      />
-
-                      <div className="flex flex-col ml-3 ">
-                        <span className="text-md font-medium w-auto">
-                          Spicy Mexican potatoes
-                        </span>
-                        <span className="text-xs font-light text-gray-400">
-                          #66999
-                        </span>
-                      </div>
-                    </div>
-
-                    <div className="flex justify-center items-center">
-                      <div className="pr-8 flex">
-                        <span className="font-semibold">-</span>
-                        <input
-                          type="text"
-                          className="focus:outline-none bg-gray-100 border h-6 w-8 rounded text-sm px-2 mx-2"
-                          value="1"
-                        />
-                        <span className="font-semibold">+</span>
-                      </div>
-
-                      <div className="pr-8">
-                        <span className="text-xs font-medium">$10.50</span>
-                      </div>
-                      <div>
-                        <i className="fa fa-close text-xs font-medium"></i>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="flex justify-between items-center mt-6 pt-6 border-t">
-                    <div className="flex  items-center">
-                      <img alt="/"
-                        src="https://i.imgur.com/xbTAITF.jpg"
-                        width="60"
-                        className="rounded-full "
-                      />
-
-                      <div className="flex flex-col ml-3 ">
-                        <span className="text-md font-medium">Breakfast</span>
-                        <span className="text-xs font-light text-gray-400">
-                          #86577
-                        </span>
-                      </div>
-                    </div>
-
-                    <div className="flex justify-center items-center">
-                      <div className="pr-8 flex">
-                        <span className="font-semibold">-</span>
-                        <input
-                          type="text"
-                          className="focus:outline-none bg-gray-100 border h-6 w-8 rounded text-sm px-2 mx-2"
-                          value="1"
-                        />
-                        <span className="font-semibold">+</span>
-                      </div>
-
-                      <div className="pr-8">
-                        <span className="text-xs font-medium">$10.50</span>
-                      </div>
-                      <div>
-                        <i className="fa fa-close text-xs font-medium"></i>
-                      </div>
-                    </div>
-                  </div>
-
+                   {cart.map((meals) => (
+                    <CartItem meals={meals} key={meals.id} />
+                   ))}
                   <div className="flex justify-between items-center mt-6 pt-6 border-t">
                     <div className="flex items-center">
                       <i className="fa fa-arrow-left text-sm pr-2"></i>

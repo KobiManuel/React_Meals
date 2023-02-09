@@ -1,11 +1,22 @@
-import React, { useState } from "react";
+import React, {useState, useEffect} from "react";
 import { CartState } from "../../store/Context";
 
 const CartItem = ({ meals }) => {
-    const [quantity, setQuantity] = useState(1);
+    const [quantity, setQuantity] = useState(1)
     const {
         state: { cart },
+        setTotal,
       } = CartState();
+
+      useEffect(() => {
+        setTotal(
+          cart.reduce(
+            (accumulator, currentValue) => accumulator + Number(Math.round(currentValue.price)*quantity),
+            0
+          )
+        );
+      }, [cart, quantity, setTotal]);
+    
   return (
     <div>
       <div className="flex justify-between items-center mt-6 pt-6 border-b  border-b-gray-200">
@@ -24,8 +35,8 @@ const CartItem = ({ meals }) => {
           <div className="pr-8 flex ">
             <button className="font-semibold" onClick={() => {
                 setQuantity(quantity - 1)
-                if(quantity === 0) {
-                    setQuantity(0)
+                if(quantity <= 1) {
+                    setQuantity(quantity)
                 }
             }}>-</button>
             <input
@@ -34,7 +45,7 @@ const CartItem = ({ meals }) => {
               value={quantity}
             />
             <button className="font-semibold" onClick={() => {
-                setQuantity(quantity + 1)
+                setQuantity(quantity + 1) 
             }}>+</button>
           </div>
 

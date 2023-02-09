@@ -3,25 +3,17 @@ import { CartState } from "../../store/Context";
 import NavBar from "../../UI/NavBar/NavBar";
 import { useNavigate } from "react-router-dom";
 import Button from "../../UI/Button/Button";
-import { useState, useEffect } from "react";
 import CartItem from "./CartItem";
 
 const Cart = () => {
-  const [total, setTotal] = useState();
+  
   const navigate = useNavigate();
   const {
     state: { cart },
+    total ,
   } = CartState();
 
-  useEffect(() => {
-    setTotal(
-      cart.reduce(
-        (accumulator, currentValue) => accumulator + Number(Math.round(currentValue.price))*currentValue.qty,
-        0
-      )
-    );
-  }, [cart]);
-
+ 
   return (
     <>
       <NavBar />

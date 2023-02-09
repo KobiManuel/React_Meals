@@ -8,13 +8,12 @@ const CartItem = ({ meals }) => {
                     <div className="flex  items-center">
                       <img alt="/"
                         src={meals.meal}
-                        width="8
-                        0"
+                        width="80"
                         className="rounded-full "
                       />
 
                       <div className="flex flex-col ml-3">
-                        <span className="md:text-md font-medium">
+                        <span className="md:text-md font-medium capitalize">
                           {meals.mealNameTop} {meals.mealNameBottom}
                         </span>
                         <span className="text-xs font-light text-gray-400">

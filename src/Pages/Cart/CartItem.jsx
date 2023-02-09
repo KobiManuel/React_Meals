@@ -8,13 +8,14 @@ const CartItem = ({ meals }) => {
                     <div className="flex  items-center">
                       <img alt="/"
                         src={meals.meal}
-                        width="60"
+                        width="8
+                        0"
                         className="rounded-full "
                       />
 
                       <div className="flex flex-col ml-3">
                         <span className="md:text-md font-medium">
-                          {meals.mealNameTop}
+                          {meals.mealNameTop} {meals.mealNameBottom}
                         </span>
                         <span className="text-xs font-light text-gray-400">
                           {meals.id}

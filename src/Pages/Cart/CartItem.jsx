@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { CartState } from "../../store/Context";
 
 const CartItem = ({ meals }) => {
-    const [quantity, setQuantity] = useState(0);
+    const [quantity, setQuantity] = useState(1);
     const {
         state: { cart },
       } = CartState();
@@ -39,7 +39,7 @@ const CartItem = ({ meals }) => {
           </div>
 
           <div className="pr-8 ">
-            <span className="text-xs font-medium">${meals.price}</span>
+            <span className="text-xs font-medium">${meals.price * quantity}</span>
           </div>
           <div>
             <i className="fa fa-close text-xs font-medium"></i>

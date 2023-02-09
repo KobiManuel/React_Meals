@@ -28,7 +28,9 @@ const CartItem = ({ meals }) => {
               className="focus:outline-none bg-gray-100 border h-6 w-8 rounded text-sm px-2 mx-2"
               value={quantity}
             />
-            <button className="font-semibold">+</button>
+            <button className="font-semibold" onClick={() => {
+                setQuantity(quantity + 1)
+            }}>+</button>
           </div>
 
           <div className="pr-8 ">

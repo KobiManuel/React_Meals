@@ -6,7 +6,7 @@ const Accordion = ({ open, toggle, index, title, description, id }) => {
       onClick={toggle}
       className={
         !open
-          ? " transition-all duration-500 ease-in-out delay-150 body-font font-poppins py-9 px-9 flex flex-row  justify-between w-full h-fit bg-stone-100 hover:bg-black hover:rounded-[2rem] border-b-[1px] border-b-gray-300 first:rounded-t-3xl last:rounded-b-3xl"
+          ? "group transition-all duration-500 ease-in-out delay-150 body-font font-poppins py-9 px-9 flex flex-row  justify-between w-full h-fit bg-stone-100 hover:bg-black hover:rounded-[2rem] border-b-[1px] border-b-gray-300 first:rounded-t-3xl last:rounded-b-3xl"
           : "body-font font-poppins py-9 px-9 flex flex-row  justify-between w-full h-fit bg-black hover:rounded-[2rem] border-b-[1px] border-b-gray-300 first:rounded-t-3xl last:rounded-b-3xl rounded-[2rem] "
       }
     >
@@ -15,7 +15,7 @@ const Accordion = ({ open, toggle, index, title, description, id }) => {
         <h5
           className={
             !open
-              ? "text-[var(--secondary)] text-2xl font-semibold hover:text-white"
+              ? "text-[var(--secondary)] text-2xl font-semibold hover:text-white group-hover:text-white"
               : "text-white text-2xl font-semibold hover:text-white"
           }
         >

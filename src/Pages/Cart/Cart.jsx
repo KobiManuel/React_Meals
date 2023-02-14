@@ -36,7 +36,7 @@ const Cart = () => {
                         <i className="fa fa-arrow-left text-sm pr-2"></i>
                         <span
                           className="text-md  font-medium text-[var(--primary)] cursor-pointer hover:text-opacity-75"
-                          onClick={() => navigate("/index")}
+                          onClick={() => navigate("/")}
                         >
                           Continue Shopping
                         </span>

@@ -8,14 +8,15 @@ const CartItem = ({ meals }) => {
     setTotal,
   } = CartState();
 
-    useEffect(() => {
-      setTotal(
-        cart.reduce(
-          (accumulator, currentValue) => accumulator + Number(Math.round(currentValue.price)),
-          0
-        )
-      );
-    }, [cart, quantity, setTotal, meals.price]);
+  useEffect(() => {
+    setTotal(
+      cart.reduce(
+        (accumulator, currentValue) =>
+          accumulator + Number(Math.round(currentValue.price)),
+        0
+      )
+    );
+  }, [cart, quantity, setTotal]);
 
   return (
     <div>

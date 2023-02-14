@@ -8,14 +8,14 @@ const CartItem = ({ meals }) => {
     setTotal,
   } = CartState();
 
-  //   useEffect(() => {
-  //     setTotal(
-  //       cart.reduce(
-  //         (accumulator, currentValue) => accumulator + Number(Math.round(currentValue.price)),
-  //         0
-  //       )
-  //     );
-  //   }, [cart, quantity, setTotal]);
+    useEffect(() => {
+      setTotal(
+        cart.reduce(
+          (accumulator, currentValue) => accumulator + Number(Math.round(currentValue.price)),
+          0
+        )
+      );
+    }, [cart, quantity, setTotal, meals.price]);
 
   return (
     <div>
@@ -53,14 +53,6 @@ const CartItem = ({ meals }) => {
               className="font-semibold"
               onClick={() => {
                 setQuantity((prevValue) => prevValue + 1);
-                setTotal(
-                  cart.reduce(
-                    (accumulator, currentValue) =>
-                      accumulator +
-                      Number(Math.round(currentValue.price)) * quantity,
-                    0
-                  )
-                );
               }}
             >
               +

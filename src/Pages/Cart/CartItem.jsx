@@ -12,7 +12,7 @@ const CartItem = ({ meals }) => {
     setTotal(
       cart.reduce(
         (accumulator, currentValue) =>
-          accumulator + Number(Math.round(currentValue.price)),
+          accumulator + Number(Math.round(currentValue.price)) *quantity,
         0
       )
     );

@@ -9,7 +9,7 @@ const MealCard = ({ meals }) => {
   } = CartState();
 
   return (
-    <div className="rounded-[2rem] bg-stone-100 w-[220px] h-[334.67px] flex flex-col justify-center items-center">
+    <div className="rounded-[2rem] bg-stone-100 w-[220px] h-[334.67px] flex flex-col justify-center items-center self-center justify-self-center">
       <div className="relative overflow-hidden w-full h-full rounded-[2rem] group max-[490px]:w-fit">
         <div className=" h-full flex flex-col items-center justify-center">
         <div className="w-[100%] h-[220.06px]">

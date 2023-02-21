@@ -61,7 +61,7 @@ const MealsSection = () => {
             filterItem={filterItem}
           />
         </div>
-        <div className="grid grid-cols-4 gap-6 max-[1029px]:grid-cols-3 max-[812px]:grid-cols-2 max-[618px]:grid-cols-1">
+        <div className="grid grid-cols-4 gap-6 max-[1029px]:grid-cols-3 max-[812px]:grid-cols-2 max-[618px]:grid-cols-1 justify-center items-center">
           {item
             .slice(0, visible)
             .map(

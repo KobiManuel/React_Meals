@@ -17,7 +17,7 @@ const TopSection = () => {
         </h5>
         <img src={dash} alt="/" className="w-[300px] h-[60px] mt-[-9px]" />
       </header>
-      <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-[3rem] px-[90px]">
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-[3rem] px-[90px] w-fit">
         <AnnouncementCard
           image={box1}
           top_text="choose your meals"
@@ -27,11 +27,11 @@ const TopSection = () => {
           image={box2}
           top_text="we deliver it to you"
           bottom_text="Choose your dates for delivery"
-          position="mt-9"
+          position="lg:mt-9"
         />
         <AnnouncementCard
           image={box3}
-          top_text="ccook & enjoy"
+          top_text="cook & enjoy"
           bottom_text="Eat your freshly cooked meal"
         />
       </div>

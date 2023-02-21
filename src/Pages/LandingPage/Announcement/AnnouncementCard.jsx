@@ -3,7 +3,7 @@ import React from "react";
 const AnnouncementCard = ({ image, top_text, bottom_text, position }) => {
   return (
     <div
-      className={`${position} bg-white py-9 h-[400px] rounded-[2rem] flex flex-col justify-center items-center gap-4 px-2`}
+      className={`${position} bg-white py-9 h-[400px] w-[274.66px] rounded-[2rem] flex flex-col justify-center items-center gap-4 px-2`}
     >
       <figure className="w-[100%] h-fit">
         <img

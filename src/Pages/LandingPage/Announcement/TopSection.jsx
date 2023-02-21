@@ -17,7 +17,7 @@ const TopSection = () => {
         </h5>
         <img src={dash} alt="/" className="w-[300px] h-[60px] mt-[-9px]" />
       </header>
-      <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-[3rem] px-[90px] w-fit">
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-[3rem] sm:px-[90px] w-fit mx-auto">
         <AnnouncementCard
           image={box1}
           top_text="choose your meals"

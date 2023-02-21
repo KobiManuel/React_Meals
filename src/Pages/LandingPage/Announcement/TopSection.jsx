@@ -11,13 +11,13 @@ const TopSection = () => {
       <header className="capitalize body-font font-poppins text-center w-fit mx-auto">
         <h5
           className="text-4xl text-[var
-            (--secondary)] font-semibold"
+            (--secondary)] font-semibold max-[410px]:text-2xl"
         >
           Watch it work
         </h5>
         <img src={dash} alt="/" className="w-[300px] h-[60px] mt-[-9px]" />
       </header>
-      <div className="grid grid-cols-3 gap-[3rem] px-[90px]">
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-[3rem] px-[90px]">
         <AnnouncementCard
           image={box1}
           top_text="choose your meals"

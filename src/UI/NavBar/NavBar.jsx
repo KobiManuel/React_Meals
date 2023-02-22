@@ -30,7 +30,7 @@ const NavBar = () => {
           : " shadow-xl  bg-white body-font font-poppins"
       }
     >
-      <div className=" max-w-[1100px] flex bg-white items-center justify-between gap-9 h-24 mx-auto">
+      <div className=" max-w-[1100px] flex bg-white items-center justify-between gap-9 h-24 mx-auto px-2">
         <div className="pl-2 w-fit flex flex-row">
           <h3 className=" text-2xl font-semibold text-[var(--primary)]">
             React <span className="text-[var(--secondary)]">Meals</span>

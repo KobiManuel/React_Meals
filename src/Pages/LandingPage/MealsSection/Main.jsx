@@ -20,11 +20,11 @@ const MealsSection = () => {
     setItem(newItem);
   };
 
- // const [mealTop, setmealTop] = useState("");
+  // const [mealTop, setmealTop] = useState("");
 
- // const changeContent = (value) => {
-   // setmealTop(value);
- // };
+  // const changeContent = (value) => {
+  // setmealTop(value);
+  // };
 
   const [visible, setVisible] = useState(4);
   const showMoreOrLessHandler = () => {
@@ -62,16 +62,9 @@ const MealsSection = () => {
           />
         </div>
         <div className="grid grid-cols-4 gap-6 max-[1029px]:grid-cols-3 max-[812px]:grid-cols-2 max-[618px]:grid-cols-1 justify-center items-center">
-          {item
-            .slice(0, visible)
-            .map(
-              (meals) => (
-                <MealCard
-                  meals={meals}
-                  key={meals.id}
-                />
-              )
-            )}
+          {item.slice(0, visible).map((meals) => (
+            <MealCard meals={meals} key={meals.id} />
+          ))}
         </div>
         {item === MealCardInfo ? (
           <div className=" w-fit mx-auto mt-12">
@@ -82,7 +75,7 @@ const MealsSection = () => {
         ) : (
           " "
         )}
-    
+
         {/* {popUp === MealCardInfo ? (
           <div className="w-full h-fit">
             {item.map(({mealNameTop, id}) => {

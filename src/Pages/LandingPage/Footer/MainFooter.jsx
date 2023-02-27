@@ -14,14 +14,14 @@ const MainFooter = () => {
           backgroundAttachment: "fixed",
           width: "100%",
           maxWidth: "100%",
-          height: "550px",
+          height: "100%",
         }}
         className="absolute before:content-[''] before:absolute brightness-[0.40] z-[-1]"
       >
         {" "}
       </div>
       <div className=" max-w-[1100px] mx-auto body-font font-poppins pb-[96px] pt-[200px]">
-        <div className=" grid grid-cols-5 justify-center items-center">
+        <div className=" grid lg:grid-cols-5 md:grid-cols-3 justify-center items-center">
           <header className=" flex flex-col gap-8">
             <div className="pl-2 w-fit flex flex-row">
               <h3 className=" text-2xl font-semibold text-[var(--primary)]">

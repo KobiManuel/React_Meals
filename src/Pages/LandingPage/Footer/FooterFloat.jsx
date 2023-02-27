@@ -26,7 +26,7 @@ const FooterFloat = () => {
             <input
               type="email"
               placeholder="Enter your email address"
-              className="capitalize text-[#868e96] text-xs w-[60%] outline-none max-[743px]:w-[40%] max-[540px]:w-full max-[540px]:border-2 max-[540px]:rounded-[0.5rem] max-[540px]:px-4 "
+              className="capitalize text-[#868e96] text-xs w-[60%] outline-none max-[743px]:w-[40%] max-[540px]:w-full max-[540px]:border-[0.5px] max-[540px]:rounded-[0.5rem] max-[540px]:px-4 "
             />
             <Button>sign up</Button>
           </div>

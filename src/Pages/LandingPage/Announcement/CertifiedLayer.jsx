@@ -15,7 +15,11 @@ const CertifiedLayer = () => {
       />
       <div className="grid min-[803px]:grid-cols-12 items-center w-fit max-[803px]:grid-cols-1 justify-center mx-auto">
         <div className=" min-[803px]:col-span-7 max-[803px]:w-[80%] max-[436px]:w-full max-[436px]:ml-12 mx-auto">
-          <img src={bowl} alt="/" className="w-full h-full max-[436px]:w-[335.2px] max-[436px]:h-[299.25px]" />
+          <img
+            src={bowl}
+            alt="/"
+            className="w-full h-full max-[436px]:w-[335.2px] max-[436px]:h-[299.25px]"
+          />
         </div>
         <div className=" body-font font-poppins flex items-center justify-end min-[803px]:col-span-4 max-[851px]:w-[300px] max-[803px]:px-6 max-[803px]:w-fit w-fit mx-auto">
           <div className=" flex flex-col gap-5 ">

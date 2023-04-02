@@ -26,6 +26,7 @@
 }
 .button:hover {
   color: var(--primary);
+  border: 1px solid  var(--primary);
 }
 .button:hover span {
   transform: translateY(0) scale(2);

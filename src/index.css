@@ -9,3 +9,24 @@
     --secondary: #262626;
    }
    /*#fd7e14 */
+   ::-moz-selection {
+      /* Code for Firefox */
+      color: #000000;
+      background: var(--primary);
+    }
+    
+    ::selection {
+      color: #000000;
+      background: var(--primary);
+    }
+    
+    ::-webkit-scrollbar {
+      width: 5px;
+      background: #ffffff;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+      background: rgba(0, 186, 128, 0.5);
+      border-radius: 5px;
+    }
+    

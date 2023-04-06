@@ -5,7 +5,7 @@ import Accordion from "./Accordion";
 import { AccordionData } from "./AccordionData";
 
 const FaQs = () => {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(0);
   const toggle = (index) => {
     if (open === index) {
       setOpen(false);

@@ -6,8 +6,8 @@ const Accordion = ({ open, toggle, index, title, description, id }) => {
       onClick={toggle}
       className={
         !open
-          ? " group transition-all duration-500 ease-in-out delay-150 body-font font-poppins py-9 px-9 flex flex-row  justify-between w-full h-fit bg-stone-100 hover:bg-black hover:rounded-[2rem] border-b-[1px] border-b-gray-300 first:rounded-t-3xl last:rounded-b-3xl"
-          : "body-font font-poppins py-9 px-9 flex flex-row  justify-between w-full h-fit bg-black hover:rounded-[2rem] border-b-[1px] border-b-gray-300 first:rounded-t-3xl last:rounded-b-3xl rounded-[2rem] "
+          ? " group transition-all duration-500 ease-in-out delay-150 body-font font-poppins py-9 px-9 flex flex-row  justify-between w-full h-fit bg-stone-100 hover:bg-black hover:rounded-[2rem] border-b-[1px] border-b-gray-300 first:rounded-t-3xl last:rounded-b-3xl cursor-pointer"
+          : "body-font font-poppins transition-all duration-500 ease-in-out delay-150  py-9 px-9 flex flex-row  justify-between w-full h-fit bg-black hover:rounded-[2rem] border-b-[1px] border-b-gray-300 first:rounded-t-3xl last:rounded-b-3xl rounded-[2rem] cursor-pointer "
       }
     >
       <span className=" text-4xl text-[#868e96] font-semibold max-[826px]:text-2xl">

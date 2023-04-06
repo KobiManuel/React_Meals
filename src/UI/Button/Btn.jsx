@@ -2,16 +2,17 @@ import React from "react";
 import { MealCardInfo } from "../../Pages/LandingPage/MealsSection/MealCardInfo";
 import styles from "./BtnTransparent.module.css";
 
-const Btn = ({ setItem, menuItems, filterItem }) => {
+const Btn = ({ setItem, menuItems, filterItem, style }) => {
   return (
     <>
-      <div className="grid grid-cols-6 -translate-y-[110%] max-[1040px]:grid-cols-3 gap-y-4 items-center max-[1040px]:-translate-y-[80%] max-[462px]:grid-cols-2 ">
+      <div className="grid grid-cols-6 -translate-y-[110%] max-[1090px]:grid-cols-3 gap-y-4 items-center max-[1090px]:-translate-y-[80%] max-[462px]:grid-cols-2 ">
         {menuItems.map((Val, id) => {
           return (
             <button
               className={`${styles.button} font-medium body-font font-poppins focus:!bg-[var(--primary)] focus:text-white focus:outline-none justify-self-center self-center`}
               key={id}
               onClick={() => filterItem(Val)}
+              style={style}
             >
               {Val}
               <span></span>
